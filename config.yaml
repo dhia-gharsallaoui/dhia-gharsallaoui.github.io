@@ -69,14 +69,14 @@ params:
       enddate: present
       featuredpoints:
         - point: Read study of interconnected energy systems configurations
-        - point: Prepare intermidiate configuration 
+        - point: Prepare intermediate configuration 
         - point: Develop script to interact with Antares software and run the simulations.
-        - point: Extract results data of simulations.
-        - point: Develop Dynamic programing algorithms to calculate water values.
-        - point: Read and implement economic and technical constraints.
-        - point: Build different plot modules.
-        - point: Build the scripts in R package.
-        - point: Develop a Web App to facilate interaction and manipulation of the package.
+        - point: Extract results data of simulations
+        - point: Develop Dynamic programming algorithms to calculate water values
+        - point: Read and implement economic and technical constraints
+        - point: Build different plot modules
+        - point: Build the scripts in R package
+        - point: Develop a Web App to facilitate interaction and manipulation of the package
     - company: "Facebook"
       # id: "facebook-developer" // use this, when you want to change the id(used for navigation)
       role: "Fullstack developer"
