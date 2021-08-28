@@ -37,29 +37,46 @@ params:
 
   # About
   disable_about: false
-  descripe_l1_person: "Hi, I'm Profile, a passionate web developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-  descripe_l2_person: "This is a example template for about section. You can find my works [here](#projects)"
+  descripe_l1_person: "Hi, I'm Dhia, a passionate Data and modelling engineer.
+  I like automating things, building models, exploring scalability problems, improving efficiency and performance tuning."
+  descripe_l2_person:  "I’m a strong advocate for 📜 open source, ☁️ Cloud computing, 🆕 Innovation and Automation 🤖"
+
   skills:
-    - name: CSS
+    - name: Python
       percentage: 90
-    - name: Django
+    - name: R
       percentage: 85
-    - name: Hugo
+    - name: VBA
       percentage: 80
-    - name: React JS
+    - name: SQL
+      percentage: 70
+    - name: OpenAI 
+      percentage: 70
+    - name: ROS 
+      percentage: 70
+    - name: Arena Simulation 
+      percentage: 70
+    - name: Antares 
       percentage: 70
 
   # Experience
   disable_experience: false
   experience:
-    - company: "Google"
+    - company: "RTE"
       # id: "google-developer"   // use this, when you want to change the id(used for navigation)
-      role: "Software developer"
-      startdate: Feb 2021
+      role: "Modeling Engineer and Data analytics"
+      startdate: Jun 2021
       enddate: present
       featuredpoints:
-        - point: Lead backend developer for a product.
-        - point: Created a frontend design for a product.
+        - point: Read study of interconnected energy systems configurations
+        - point: Prepare intermidiate configuration 
+        - point: Develop script to interact with Antares software and run the simulations.
+        - point: Extract results data of simulations.
+        - point: Develop Dynamic programing algorithms to calculate water values.
+        - point: Read and implement economic and technical constraints.
+        - point: Build different plot modules.
+        - point: Build the scripts in R package.
+        - point: Develop a Web App to facilate interaction and manipulation of the package.
     - company: "Facebook"
       # id: "facebook-developer" // use this, when you want to change the id(used for navigation)
       role: "Fullstack developer"
