@@ -114,21 +114,21 @@ params:
   # Education
   disable_education: false
   education:
-    - degree: "B.tech"
-      branch: "Information Technology"
-      university: "Example university"
-      startedyear: "2013"
+    - degree: "Master MODO: Modeling, Optimization, Decision, Organization"
+      branch: "Computer science"
+      university: "Mines ParisTech &  Université Paris-Dauphine"
+      startedyear: "2020"
+      graduation: "2021"
+    - degree: "National Engineering Diploma"
+      branch: "Industrial Engineering"
+      university: "National Engineering School of Tunis -ENIT"
+      startedyear: "2018"
+      graduation: "2021"
+    - degree: "Preparatory cycle Mathematics and Physics"
+      branch: "Mathematics and Physics"
+      university: "Preparatory Institute for Engineering Studies of Tunis - IPEIT"
+      startedyear: "2016"
       graduation: "2018"
-    - degree: "Degree"
-      branch: "Branch"
-      university: "Example university"
-      startedyear: "year"
-      graduation: "year"
-    - degree: "Degree"
-      branch: "Branch"
-      university: "Example university"
-      startedyear: "year"
-      graduation: "year"
 
   # Projects
   disable_projects: false
@@ -158,7 +158,7 @@ params:
   # Contact
   disable_contact: false
   contact_content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-  email: "example@mail.com"
+  email: "safedhia@gmail.com"
 
   # Footer
   socialiconfooter: true
