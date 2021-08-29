@@ -65,34 +65,51 @@ params:
     - company: "RTE"
       # id: "google-developer"   // use this, when you want to change the id(used for navigation)
       role: "Modeling Engineer and Data analytics"
-      startdate: Jun 2021
+      startdate: June 2021
       enddate: present
       featuredpoints:
         - point: Read study of interconnected energy systems configurations
         - point: Prepare intermediate configuration 
-        - point: Develop script to interact with Antares software and run the simulations.
+        - point: Develop script to interact with Antares software and run the simulations
         - point: Extract results data of simulations
         - point: Develop Dynamic programming algorithms to calculate water values
         - point: Read and implement economic and technical constraints
         - point: Build different plot modules
         - point: Build the scripts in R package
         - point: Develop a Web App to facilitate interaction and manipulation of the package
-    - company: "Facebook"
+    - company: "BIAT"
       # id: "facebook-developer" // use this, when you want to change the id(used for navigation)
-      role: "Fullstack developer"
-      startdate: Mar 2020
-      enddate: Dec 2020
+      role: "Data Analytics"
+      startdate: Jun 2020
+      enddate: Aug 2020
       featuredpoints:
-        - point: Lead backend developer for a product.
-        - point: Created a frontend design for a product.
-    - company: "Amazon"
+        - point: Analyse customer needs
+        - point: Design of a Reporting tool for BIAT's tourism subsidiaries
+        - point: Implement  different functionalities in order to gather the data of the hotels
+        - point: Analyze the gathered data and give a complete graphical vision to the manager
+        - point: Run Machine Learning models to help managers in decision making
+    - company: "TELNET"
       # id: "amazon-developer" // use this, when you want to change the id(used for navigation)
-      role: "Fullstack developer"
-      startdate: Feb 2019
-      enddate: Jan 2020
+      role: "IA Intern"
+      startdate: Jan 2020
+      enddate: Aug 2020
       featuredpoints:
-        - point: Lead backend developer for a product.
-        - point: Created a frontend design for a product.
+        - point: Model a turtlebot robot in ROS oftware environment
+        - point: Prepare simulation environment on GAZEBO
+        - point: Implement Reinforcement Learning algorithms with OpenAi Gym
+        - point: Train the model in the virtual world 
+        - point: Compare different algorithms performance  
+    - company: "AsteelFlash"
+      role: "Intern"
+      startdate: Jan 2019
+      enddate: Jul 2019
+      featuredpoints:
+        - point: Prepare Data base template
+        - point: Link the Data base the ERP of the plant
+        - point: Automate Data import 
+        - point: Calculate the plant's performance indicators
+        - point: Provide evolution curves of the KPIs
+
 
   # Education
   disable_education: false
