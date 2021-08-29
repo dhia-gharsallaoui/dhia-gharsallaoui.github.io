@@ -133,12 +133,24 @@ params:
   # Projects
   disable_projects: false
   projects:
-    - name: "Example project without details"
-      img: /images/project.jpg
-      githublink: "https://github.com/"
-      featuredlink: "/"
-      description: "Description of project"
+    - name: "Water values for Antares"
+      img: /img/calculate water values.gif
+      githublink: "https://github.com/dhia-gharsallaoui/watervalues"
+      description: "This package aims at generating water values for Antares.
+       It allows to run specific simulations in Antares from within R, and to use the results of these simulations to compute Bellman values and water values for each stock level and each week of the year.
+       All scripts are implemented in shiny web App to facilitate the use. The obtained values can be exported to Antares and used in any study "
 
+    - name: "Image classifier"
+      img: /img/cnn.gif
+      githublink: "https://github.com/dhia-gharsallaoui/Classifier-image-processing"
+      description: "Build a classifier model to distinguish between fields and roads.
+      Use the both ML frameworks TensorFlow and Pytorch.
+      Try self made CNN model and predefined VGG19 model. 
+      Use Date generator to improve train quality."
+    - name: "Decryption of Yuka algorithm"
+      img: /img/yuka.gif
+      featuredlink: "https://www.kaggle.com/dhiagharsallaoui/final-yuka"
+      description: "Construction of a database containing the composition of nutritional foods and their YUKA score. Analyze the database and identify possible models. Verify the models with machine learning approaches"
   # Achievements
   disable_achievements: false
   achievements:
