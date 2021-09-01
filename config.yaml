@@ -150,22 +150,25 @@ params:
     - name: "Decryption of Yuka algorithm"
       img: /img/yuka.gif
       featuredlink: "https://www.kaggle.com/dhiagharsallaoui/final-yuka"
+      githublink: "https://github.com/dhia-gharsallaoui/Decryption-of-Yuka-algorithm"
       description: "Construction of a database containing the composition of nutritional foods and their YUKA score. Analyze the database and identify possible models. Verify the models with machine learning approaches"
   # Achievements
   disable_achievements: false
   achievements:
-    - title: Competition winner
-      description: We are developed a product which can help others.
-      img: /images/achiv.jpg
-    - title: Competition winner
-      description: We are developed a product which can help others.
-      img: /images/achiv.jpg
-    - title: Competition winner
-      description: We are developed a product which can help others.
-      img: /images/achiv.jpg
-    - title: Competition winner
-      description: We are developed a product which can help others.
-      img: /images/achiv.jpg
+    - title: Scrum certificate
+      description: Scrum Fundamentals Certified (SFC™).
+      img: /img/scrum.jpg
+      featuredlink: "https://www.scrumstudy.com/certification/verify?type=SFC&number=838205"
+    - title: "Supervised Machine Learning: Regression"
+      description: "Supervised Machine Learning: Regression IBM certificate."
+      img: "/img/Supervised Machine Learning: Regression.jpg"
+
+      featuredlink: "https://www.scrumstudy.com/certification/verify?type=SFC&number=838205"
+    - title: Exploratory Data Analysis for Machine Learning
+      description: Exploratory Data Analysis for Machine Learning certificate from IBM.
+      img: /img/EDA_IBM.jpeg
+      featuredlink: "https://www.coursera.org/account/accomplishments/verify/2JLQEMJUDN9Q?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+
 
   # Contact
   disable_contact: false
