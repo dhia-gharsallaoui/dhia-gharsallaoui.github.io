@@ -30,7 +30,7 @@ params:
   disable_home: false
   profile_image: "/img/profile.jpg"
   name: "Dhia Gharsallaoui"
-  profession: "Engineer"
+  profession: "Data Engineer"
   github: "https://github.com/dhia-gharsallaoui"
   linkedin: "https://www.linkedin.com/in/gharsallaoui-dhia-eddine/"
   facebook: "https://www.facebook.com/dhia.gharsallaoui/"
@@ -77,6 +77,7 @@ params:
         - point: Build different plot modules
         - point: Build the scripts in R package
         - point: Develop a Web App to facilitate interaction and manipulation of the package
+        - point: Avoid dimensionality curse using Machine Learning aproach
     - company: "BIAT"
       # id: "facebook-developer" // use this, when you want to change the id(used for navigation)
       role: "Data Analytics"
@@ -177,7 +178,7 @@ params:
 
   # Footer
   socialiconfooter: true
-  recentposts: true
+  recentposts: false
 
   # Blog
   showdescription: false
