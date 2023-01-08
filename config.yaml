@@ -1,4 +1,4 @@
-baseURL: "https://profile.gurusabarish.tech"
+baseURL: "https://dhia-gharsallaoui.github.io"
 languageCode: "en-us"
 title: "Dhia Gharsallaoui"
 theme: "./.."
@@ -20,7 +20,6 @@ enableEmoji: true
 params:
   version: 3
 
- 
   # Navbar Menus
   customMenus:
     - name: "Blog"
@@ -30,33 +29,32 @@ params:
   disable_home: false
   profile_image: "/img/profile.jpg"
   name: "Dhia Gharsallaoui"
-  profession: "Data scientist"
+  profession: "Solution Architect"
   github: "https://github.com/dhia-gharsallaoui"
   linkedin: "https://www.linkedin.com/in/gharsallaoui-dhia-eddine/"
   facebook: "https://www.facebook.com/dhia.gharsallaoui/"
 
   # About
   disable_about: false
-  descripe_l1_person: "Hi, I'm Dhia, a passionate Data and modelling engineer.
-  I like automating things, building models, exploring scalability problems, improving efficiency and performance tuning."
-  descripe_l2_person:  "I’m a strong advocate for 📜 open source, ☁️ Cloud computing, 🆕 Innovation and Automation 🤖"
+  descripe_l1_person: "A Solution Architect passionate about Cloud Computing. I like automating things, building pipelines, exploring scalability problems and improving efficiency and performance."
+  descripe_l2_person: "I’m a strong advocate for 📜 open source, ☁️ Cloud computing, 🆕 Innovation and Automation 🤖"
 
   skills:
-    - name: Python
+    - name: Golang
       percentage: 90
-    - name: R
+    - name: Scala
       percentage: 85
-    - name: VBA
+    - name: Python
       percentage: 80
-    - name: SQL
+    - name: Apache Spark
       percentage: 70
-    - name: OpenAI 
+    - name: Apache Kafka
       percentage: 70
-    - name: ROS 
+    - name: Apache Druid
       percentage: 70
-    - name: Arena Simulation 
+    - name: Ansible
       percentage: 70
-    - name: Antares 
+    - name: Kubernetes
       percentage: 70
 
   # Experience
@@ -69,7 +67,7 @@ params:
       enddate: present
       featuredpoints:
         - point: Read study of interconnected energy systems configurations
-        - point: Prepare intermediate configuration 
+        - point: Prepare intermediate configuration
         - point: Develop script to interact with Antares software and run the simulations
         - point: Extract results data of simulations
         - point: Develop Dynamic programming algorithms to calculate water values
@@ -98,8 +96,8 @@ params:
         - point: Model a turtlebot robot in ROS oftware environment
         - point: Prepare simulation environment on GAZEBO
         - point: Implement Reinforcement Learning algorithms with OpenAi Gym
-        - point: Train the model in the virtual world 
-        - point: Compare different algorithms performance  
+        - point: Train the model in the virtual world
+        - point: Compare different algorithms performance
     - company: "AsteelFlash"
       role: "Intern"
       startdate: Jan 2019
@@ -107,7 +105,7 @@ params:
       featuredpoints:
         - point: Prepare Data base template
         - point: Link the Data base the ERP of the plant
-        - point: Automate Data import 
+        - point: Automate Data import
         - point: Calculate the plant's performance indicators
         - point: Provide evolution curves of the KPIs
 
@@ -146,7 +144,7 @@ params:
       githublink: "https://github.com/dhia-gharsallaoui/Classifier-image-processing"
       description: "Build a classifier model to distinguish between fields and roads.
       Use the both ML frameworks TensorFlow and Pytorch.
-      Try self made CNN model and predefined VGG19 model. 
+      Try self made CNN model and predefined VGG19 model.
       Use Date generator to improve train quality."
     - name: "Decryption of Yuka algorithm"
       img: /img/yuka.gif
