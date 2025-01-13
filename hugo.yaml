@@ -1,0 +1,316 @@
+baseURL: "https://dhia-gharsallaoui.github.io"
+languageCode: "en-us"
+title: "Dhia Gharsallaoui"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+Paginate: 3
+enableRobotsTXT: true
+googleAnalytics: G-2Q12XBPN53
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Menus:
+  # main:
+    # - identifier: blog
+    #   name: Blog
+    #   title: Blog posts
+    #   url: /blog
+    #   weight: 1
+    # - identifier: projects
+    #   name: Projects
+    #   title: Projects
+    #   url: /projects
+    #   weight: 2
+    #
+params:
+  title: "Dhia Gharsallaoui"
+  description: "Solution Architect & Blockchain Developer passionate about building scalable systems"
+  favicon: "/fav.png"
+  useBootstrapCDN: false
+  animate: true
+  # Enable mathjax for technical blog posts
+  mathjax: true
+
+  theme:
+    defaultTheme: "light"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  # Custom color scheme
+  color:
+    textColor: "#2d3748"          # Dark gray for text
+    secondaryTextColor: "#718096"  # Medium gray for secondary
+    textLinkColor: "#00b4d8"      # Bright cyan for links
+    backgroundColor: "#ffffff"     # White background
+    secondaryBackgroundColor: "#f8fafc"  # Very light gray
+    primaryColor: "#0077b6"       # Deep cyan for primary
+    secondaryColor: "#caf0f8"     # Light cyan for accents
+
+  navbar:
+    align: ms-auto
+    brandName: "Dhia Gharsallaoui"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Hi, I'm"
+    title: "Dhia Gharsallaoui"
+    subtitle: "Solution Architect & Blockchain Developer"
+    content: "A passionate architect building scalable systems and blockchain solutions. I specialize in cloud architecture, distributed systems, and blockchain development."
+    image: /images/profile.jpg
+    button:
+      enable: true
+      name: "View Resume"
+      url: "/resume.pdf"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/dhia-gharsallaoui
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/gharsallaoui-dhia-eddine/
+        - icon: fas fa-envelope
+          url: mailto:gharsallaoui.dhia@gmail.com
+
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/profile.jpg"
+    content: |-
+      A Solution Architect with expertise in Cloud Computing and Blockchain Technology. I specialize in designing and implementing scalable, distributed systems that solve complex business problems.
+
+      I'm a strong advocate for 📜 open source, ☁️ Cloud computing, 🔗 Blockchain, and 🤖 Automation. My approach combines technical excellence with practical business solutions.
+
+      Currently focusing on blockchain infrastructure development and cloud-native architectures while contributing to various open-source projects.
+    skills:
+      enable: true
+      title: "Here are some technologies I've been working with:"
+      items:
+        - "Go (Golang)"
+        - "Scala"
+        - "Python"
+        - "Solidity"
+        - "TypeScript"
+        - "Kubernetes"
+        - "Docker"
+        - "Ansible"
+        - "Apache Spark"
+        - "Apache Kafka"
+        - "PostgreSQL"
+        - "Web3.js"
+        - "Smart Contracts"
+        - "XRPL"
+        - "Grafana"
+        - "Elasticsearch"
+
+  experience:
+    enable: true
+    items:
+      - job: "Solution Architect"
+        company: "Skilld"
+        companyUrl: "https://skilld.cloud/"
+        date: "February 2022 - present"
+        featuredLink:
+          enable: true
+          name: "Company Website"
+          url: "https://skilld.cloud/"
+        content: |
+          Lead architect responsible for designing and implementing scalable cloud-native solutions.
+
+          Key Achievements:
+          - Architected and designed reliable platforms using Microservices, Domain Driven, and Event Driven designs
+          - Implemented SSO architecture for platform cross applications using Ory ecosystem
+          - Engineered Spark data pipelines achieving 80% build time improvement
+          - Designed and developed scalable Go microservices
+          - Implemented comprehensive monitoring using Grafana, Elasticsearch, and Prometheus
+          - Managed Kubernetes clusters and streamlined CI/CD processes
+          - Developed sophisticated data storage solutions with PostgreSQL
+          - Led adoption of cutting-edge open source technologies
+
+      - job: "Blockchain Developer"
+        company: "ChainsAtlas"
+        date: "March 2024 - present"
+        featuredLink:
+          enable: true
+          name: "Company Website"
+          url: "https://chainsatlas.com/"
+        content: |
+          Specialized in blockchain development and smart contract engineering.
+
+          Key Projects:
+          - Developed multi-chain bridge protocols for EVM-XRPL integration
+          - Architected gaming reward systems with multi-signature validation
+          - Implemented robust transaction processing systems
+          - Designed secure cross-chain operations
+          - Created comprehensive testing environments
+
+      - job: "Software Engineer"
+        company: "idatase GmbH"
+        date: "January 2024 - March 2024"
+        featuredLink:
+          enable: true
+          name: "Company Website"
+          url: "https://netlume.net/"
+        content: |
+          Led the development of data aggregation systems and APIs.
+
+          Achievements:
+          - Developed scalable data aggregation API system
+          - Architected microservices using Python/Flask and PostgreSQL
+          - Implemented JWT-based authentication
+          - Created automated CI/CD pipelines
+          - Designed flexible data source connectors
+
+  education:
+    enable: true
+    items:
+      - title: "Master MODO: Modeling, Optimization, Decision, Organization"
+        school:
+          name: "Mines ParisTech & Université Paris-Dauphine"
+          url: "https://www.minesparis.psl.eu/"
+        date: "2020 - 2021"
+        content: |-
+          Specialization in Computer Science and Mathematics
+          - Advanced algorithms and optimization
+          - Machine learning and data science
+          - Decision theory and operations research
+        featuredLink:
+          enable: true
+          name: "View Institution"
+          url: "https://www.minesparis.psl.eu/"
+
+      - title: "National Engineering Diploma"
+        school:
+          name: "National Engineering School of Tunis (ENIT)"
+          url: "http://www.enit.rnu.tn/"
+        date: "2018 - 2021"
+        content: |-
+          Industrial Engineering with focus on Data Science
+          - Software engineering and system design
+          - Data analysis and machine learning
+          - Industrial automation and control systems
+        featuredLink:
+          enable: true
+          name: "View Institution"
+          url: "http://www.enit.rnu.tn/"
+
+  projects:
+    enable: true
+    items:
+      - title: "Mage-ai"
+        content: "Contributed to the open-source data pipeline tool by adding LDAP authentication, Apache Druid integration, and logger centralization."
+        image: /images/projects/mage-ai.png
+        featured:
+          name: "View Project"
+          link: "https://github.com/mage-ai/mage-ai"
+        badges:
+          - "Python"
+          - "Apache Druid"
+          - "LDAP"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/mage-ai/mage-ai
+
+      - title: "Go-mail"
+        content: "Implemented middleware concept, tests, and OpenPGP encryption middleware for Go email handling library."
+        image: /images/projects/go-mail.svg
+        featured:
+          name: "View Project"
+          link: "https://github.com/wneessen/go-mail/"
+        badges:
+          - "Go"
+          - "OpenPGP"
+          - "Middleware"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/wneessen/go-mail/
+
+      - title: "Go-RTE"
+        content: "Developed Go client library for RTE API integration."
+        image: /images/projects/go-rte.png
+        featured:
+          name: "View Project"
+          link: "https://github.com/dhia-gharsallaoui/gorte"
+        badges:
+          - "Go"
+          - "API"
+          - "Client Library"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/dhia-gharsallaoui/gorte
+
+  achievements:
+    enable: true
+    items:
+      - title: "Scrum Fundamentals Certified (SFC™)"
+        content: "Professional certification in Scrum methodology and agile practices"
+        url: "https://www.scrumstudy.com/certification/verify?type=SFC&number=838205"
+        image: /images/scrum.jpg
+
+      - title: "Supervised Machine Learning: Regression"
+        content: "IBM certification in advanced machine learning techniques"
+        image: "/images/Supervised Machine Learning: Regression.jpg"
+
+  contact:
+    enable: true
+    content: "Interested in collaboration or have a project in mind? Feel free to reach out!"
+    btnName: "Email Me"
+    btnLink: "mailto:gharsallaoui.dhia@gmail.com"
+
+  footer:
+    recentPosts:
+      path: "blog"
+      count: 3
+      title: "Latest Posts"
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/dhia-gharsallaoui
+      linkedin: https://www.linkedin.com/in/gharsallaoui-dhia-eddine/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
