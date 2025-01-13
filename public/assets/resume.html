@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhia Eddine Gharsallaoui - Resume</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #2d3748;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #1a202c;
+        }
+        
+        .contact-info {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid #4a5568;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            color: #2d3748;
+        }
+        
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: #1a202c;
+        }
+        
+        .company-info {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            margin-bottom: 1rem;
+        }
+        
+        .skill-title {
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 0.25rem;
+        }
+        
+        .project-item {
+            margin-bottom: 1rem;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #1a202c;
+        }
+        
+        .project-link {
+            color: #4299e1;
+            text-decoration: none;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Dhia Eddine Gharsallaoui</div>
+        <div class="contact-info">
+            Paris, Ile-de-France, France | gharsallaoui.dhia@gmail.com | 07 58 77 03 14 | 
+            <a href="https://www.linkedin.com/in/gharsallaoui-dhia-eddine/" class="project-link">LinkedIn</a> | 
+            <a href="https://dhia-gharsallaoui.github.io" class="project-link">Portfolio</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Summary</div>
+        <p>A Solution Architect passionate about Cloud Computing and Blockchain Technology. I like automating things, building pipelines, exploring scalability problems and improving efficiency and performance.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-title">Solution Architect</div>
+            <div class="company-info">Skilld | February 2022 - Present | Paris, France</div>
+            <ul>
+                <li>Led the development and architecture of durable, scalable platforms by integrating Microservices Architecture, Domain Driven Design, and Event Driven Architecture, significantly improving system responsiveness and scalability.</li>
+                <li>Developed and maintained multiple projects using Go (Golang), Python, and Scala, incorporating SQL for database management and queries.</li>
+                <li>Engineered and deployed Spark data pipelines leveraging Apache Spark, Apache Kafka, Apache Druid, and Apache Delta Lake, achieving 80% build time optimization.</li>
+                <li>Deployed and managed Kubernetes clusters, streamlining deployment pipelines using Docker, Ansible, Git, GitHub Actions, and GitLab.</li>
+                <li>Contributed to sophisticated data storage solutions using PostgreSQL, TimescaleDB, DragonflyDB, and Trino.</li>
+                <li>Integrated monitoring tools including Grafana, Graylog, Elasticsearch, and Prometheus for system health insights.</li>
+                <li>Designed and implemented SSO architecture for platform cross applications using Ory ecosystem, ensuring secure and seamless authentication across multiple services.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Freelance Blockchain Developer</div>
+            <div class="company-info">ChainsAtlas | March 2024 - Present</div>
+            <ul>
+                <li>Developed and optimized multi-chain bridge protocols integrating EVM-compatible chains with XRPL, implementing secure cross-chain asset transfers and NFT operations for enhanced interoperability.</li>
+                <li>Architected and implemented battle reward systems with multi-signature validation for blockchain gaming, incorporating XRP and NFT reward distribution mechanisms.</li>
+                <li>Built robust transaction processing systems with retry logic and nonce management, achieving improved transaction reliability across multiple blockchain networks.</li>
+                <li>Designed and implemented agnostic blockchain operations involving smart contracts in Solidity and TypeScript, with a focus on secure multi-signature wallet functionalities.</li>
+                <li>Enhanced blockchain bridging infrastructure by developing verifier and guardian systems, implementing secure validation protocols for cross-chain operations.</li>
+                <li>Created comprehensive testing environments and deployment automation scripts, ensuring reliable smart contract deployments and updates.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Freelance Software Engineer</div>
+            <div class="company-info">idatase GmbH | January 2024 - March 2024 | Remote</div>
+            <ul>
+                <li>Led development of scalable data aggregation API system for automated metrics collection.</li>
+                <li>Architected modular microservices solution using Python/Flask, PostgreSQL, and Docker.</li>
+                <li>Implemented comprehensive API authentication with JWT tokens.</li>
+                <li>Created automated CI/CD pipeline using GitHub Actions.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Skills</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-title">Systems Design & Architecture</div>
+                Scalable platform architecture, Microservices, Domain Driven Design, Event Driven architecture, Blockchain Architecture
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Programming Languages</div>
+                Go (Golang), Python, Scala, SQL, Solidity, TypeScript, JavaScript
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Blockchain Technologies</div>
+                Smart Contracts, Web3.js, Ethers.js, OpenZeppelin, XRPL, EVM
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Big Data Technologies</div>
+                Apache Spark, Apache Kafka, Apache Druid, Delta Lake, PySpark, Hive Metastore
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">DevOps & Deployment</div>
+                Kubernetes, Docker, Ansible, Git, GitHub Actions, GitLab, Hardhat
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projects</div>
+        <div class="project-item">
+            <span class="project-title">Mage-ai</span> - 
+            <a href="https://github.com/mage-ai/mage-ai" class="project-link">Open Source</a>
+            <br>
+            Contributed LDAP authentication, Apache Druid integration, and logger centralization features.
+        </div>
+        <div class="project-item">
+            <span class="project-title">Go-mail</span> - 
+            <a href="https://github.com/wneessen/go-mail/" class="project-link">Open Source</a>
+            <br>
+            Contributed by adding the middleware concept and their tests and OpenPGP encryption middleware.
+        </div>
+        <div class="project-item">
+            <span class="project-title">Go-RTE</span> - 
+            <a href="https://github.com/dhia-gharsallaoui/gorte" class="project-link">Open Source</a>
+            <br>
+            A Go RTE API client enabling Go programs to interact with RTE APIs in a simple and uniform way.
+        </div>
+
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="experience-item">
+            <div class="job-title">Master's Degree in Computer Science</div>
+            <div class="company-info">MINES ParisTech | 2020 - 2021</div>
+            <div class="company-info">Minor in Mathematics</div>
+        </div>
+        <div class="experience-item">
+            <div class="job-title">Engineer's Degree in Industrial Engineering</div>
+            <div class="company-info">ENIT | 2018 - 2021</div>
+            <div class="company-info">Minor in Data Science</div>
+        </div>
+    </div>
+</body>
+</html>
