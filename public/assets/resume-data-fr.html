@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhia Eddine Gharsallaoui - CV</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #2d3748;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #1a202c;
+        }
+        
+        .contact-info {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid #4a5568;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            color: #2d3748;
+        }
+        
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: #1a202c;
+        }
+        
+        .company-info {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            margin-bottom: 1rem;
+        }
+        
+        .skill-title {
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 0.25rem;
+        }
+        
+        .project-item {
+            margin-bottom: 1rem;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #1a202c;
+        }
+        
+        .project-link {
+            color: #4299e1;
+            text-decoration: none;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Dhia Eddine Gharsallaoui</div>
+        <div class="contact-info">
+            Paris, Île-de-France, France | gharsallaoui.dhia@gmail.com | 07 58 77 03 14 | 
+            <a href="https://www.linkedin.com/in/gharsallaoui-dhia-eddine/" class="project-link">LinkedIn</a> | 
+            <a href="https://dhia-gharsallaoui.github.io" class="project-link">Portfolio</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Résumé</div>
+        <p>Data Platform Architect avec 3 ans d'expérience, spécialisé dans la conception et le déploiement de plateformes de données distribuées pour diverses entreprises. Expert en architecture de données cloud-native, optimisation des performances et automatisation. Maîtrise approfondie des technologies de traitement de données massives incluant Apache Spark, Delta Lake, et Trino. Expérience significative dans l'implémentation de solutions data mesh et la création de plateformes de données unifiées multi-sources. Contributeur actif aux projets open-source dans le domaine du data engineering.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Expérience Professionnelle</div>
+        
+        <div class="experience-item">
+            <div class="job-title">Architect Data Platform</div>
+            <div class="company-info">Skilld | Février 2022 - Présent | Paris, France</div>
+            <ul>
+                <li>Conception et déploiement de plateformes de données distribuées pour multiples clients, implémentant des architectures data mesh et des pipelines de traitement de données évolutifs.</li>
+                <li>Configuration, déploiement et maintenance de clusters Kubernetes haute disponibilité multi-environnements (dev, staging, prod) avec mise en place de politiques de sécurité, gestion des backups et plans de reprise d'activité.</li>
+                <li>Déploiement et maintenance de clusters Kafka distribués, monitoring des performances, et optimisation des configurations pour gérer des charges importantes de streaming de données.</li>
+                <li>Mise en place de Trino comme solution de requêtage unifié, permettant aux clients d'interroger efficacement leurs données à travers multiples sources (Delta Lake, Apache Druid, PostgreSQL, Prometheus) avec des performances optimisées.</li>
+                <li>Développement et optimisation de pipelines de traitement de données utilisant Apache Spark et Delta Lake, implémentant des contrôles de qualité des données et une gouvernance robuste.</li>
+                <li>Implémentation d'une architecture de monitoring complète avec Prometheus et Grafana, incluant des tableaux de bord personnalisés pour le suivi des performances des plateformes de données.</li>
+                <li>Conception et maintenance d'une infrastructure Kubernetes multi-cluster pour le déploiement automatisé des plateformes de données.</li>
+                <li>Automatisation des processus de déploiement et de configuration utilisant Ansible et GitLab CI, assurant une cohérence et une reproductibilité des environnements.</li>
+                <li>Implémentation d'un système de traçage distribué avec OpenTelemetry pour une visibilité complète des pipelines de données.</li>
+                <li>Implémentation d'une couche de sécurité complète avec intégration SSO utilisant l'écosystème Ory, gérant l'authentification et l'autorisation à travers plusieurs applications.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Développeur Blockchain Freelance</div>
+            <div class="company-info">ChainsAtlas | Mars 2024 - Présent</div>
+            <ul>
+                <li>Développement et optimisation de protocoles de bridge multi-chain intégrant les chaînes compatibles EVM avec XRPL, implémentant des transferts d'actifs cross-chain sécurisés et des opérations NFT.</li>
+                <li>Architecture et implémentation de systèmes de récompenses de bataille avec validation multi-signature pour le gaming blockchain, incorporant des mécanismes de distribution de récompenses XRP et NFT.</li>
+                <li>Construction de systèmes de traitement de transactions robustes avec logique de retry et gestion des nonces, atteignant une meilleure fiabilité des transactions à travers plusieurs réseaux blockchain.</li>
+                <li>Conception et implémentation d'opérations blockchain agnostiques impliquant des smart contracts en Solidity et TypeScript, avec un focus sur les fonctionnalités de wallet multi-signature sécurisées.</li>
+                <li>Amélioration de l'infrastructure de bridging blockchain en développant des systèmes de vérification et de gardiennage, implémentant des protocoles de validation sécurisés pour les opérations cross-chain.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Ingénieur Logiciel Freelance</div>
+            <div class="company-info">idatase GmbH | Janvier 2024 - Mars 2024 | Télétravail</div>
+            <ul>
+                <li>Développement de pipeline d'ingestion de données évolutif utilisant Python/Flask et PostgreSQL.</li>
+                <li>Implémentation d'architecture microservices containerisée utilisant Docker Compose et Kubernetes.</li>
+                <li>Création de pipeline de test et déploiement automatisé utilisant GitHub Actions.</li>
+                <li>Conception et implémentation d'un système de collecte de métriques en temps réel.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Compétences</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-title">Plateformes de Données</div>
+                Trino, Apache Spark, Delta Lake, Apache Druid, Data Mesh, Apache Atlas, dbt, Apache Airflow
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Infrastructure & Automatisation</div>
+                Kubernetes, Docker, Ansible, GitHub Actions, GitLab CI, Helm, Terraform, Infrastructure as Code
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Monitoring & Observabilité</div>
+                Prometheus, Grafana, Elasticsearch, Graylog, Jaeger, OpenTelemetry, AlertManager
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Bases de Données & Cache</div>
+                PostgreSQL, TimescaleDB, Redis, DragonflyDB, Trino, Apache Cassandra
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Programmation & Blockchain</div>
+                Go (Golang), Python, Scala, Solidity, TypeScript, Smart Contracts, Protocoles Cross-chain
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Sécurité & Conformité</div>
+                Cert-Manager, RBAC, OAuth2/OIDC, Ansible Vault, Écosystème Ory
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projets Open Source</div>
+        <div class="project-item">
+            <span class="project-title">Mage-ai</span> - 
+            <a href="https://github.com/mage-ai/mage-ai" class="project-link">Open Source</a>
+            <br>
+            Implémentation de l'authentification LDAP, intégration Apache Druid et système de logging centralisé.
+        </div>
+        <div class="project-item">
+            <span class="project-title">Go-mail</span> - 
+            <a href="https://github.com/wneessen/go-mail/" class="project-link">Open Source</a>
+            <br>
+            Développement du pattern d'architecture middleware et implémentation du middleware de chiffrement OpenPGP avec couverture de tests complète.
+        </div>
+        <div class="project-item">
+            <span class="project-title">Go-RTE</span> - 
+            <a href="https://github.com/dhia-gharsallaoui/gorte" class="project-link">Open Source</a>
+            <br>
+            Création d'une bibliothèque client Go pour les APIs RTE avec une façon propre et uniforme d'interagir avec différents endpoints API.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Formation</div>
+        <div class="experience-item">
+            <div class="job-title">Master en Informatique</div>
+            <div class="company-info">MINES ParisTech | 2020 - 2021</div>
+            <div class="company-info">Mineure en Mathématiques | Spécialisation en Systèmes Distribués et Cloud Computing</div>
+        </div>
+        <div class="experience-item">
+            <div class="job-title">Diplôme d'Ingénieur en Génie Industriel</div>
+            <div class="company-info">ENIT | 2018 - 2021</div>
+            <div class="company-info">Mineure en Data Science | Spécialisation en Big Data Analytics</div>
+        </div>
+    </div>
+</body>
+</html>

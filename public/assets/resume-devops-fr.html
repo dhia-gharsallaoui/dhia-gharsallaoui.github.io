@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhia Eddine Gharsallaoui - CV DevOps/Golang</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #2d3748;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #1a202c;
+        }
+        
+        .title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #4a5568;
+        }
+        
+        .contact-info {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid #4a5568;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            color: #2d3748;
+        }
+        
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: #1a202c;
+        }
+        
+        .company-info {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            margin-bottom: 1rem;
+        }
+        
+        .skill-title {
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 0.25rem;
+        }
+        
+        .project-item {
+            margin-bottom: 1rem;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #1a202c;
+        }
+        
+        .project-link {
+            color: #4299e1;
+            text-decoration: none;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Dhia Eddine Gharsallaoui</div>
+        <div class="title">Consultant DevOps/Golang | Architecte Solutions Cloud</div>
+        <div class="contact-info">
+            Paris, Île-de-France, France | gharsallaoui.dhia@gmail.com | 07 58 77 03 14 | 
+            <a href="https://www.linkedin.com/in/gharsallaoui-dhia-eddine/" class="project-link">LinkedIn</a> | 
+            <a href="https://dhia-gharsallaoui.github.io" class="project-link">Portfolio</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Résumé</div>
+        <p>Architecte de Plateformes Distribuées et DevOps senior avec 3 ans d'expérience en conception et développement de solutions cloud-native. Expert en microservices, Kubernetes, et infrastructure automation avec Ansible. Développeur confirmé en Go (Golang) avec une expérience solide dans la création d'outils d'automatisation d'infrastructure. Spécialisé dans le déploiement de solutions cloud privé, l'Infrastructure-as-Code, et la mise en place de pipelines CI/CD pour des environnements multi-cloud. Expérience éprouvée dans le développement de plugins custom pour étendre les fonctionnalités des outils DevOps.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Expertise Technique</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-title">Infrastructure as Code & DevOps</div>
+                Ansible, Kubernetes, Docker, GitLab CI, GitHub Actions, Helm, Infrastructure Bare Metal, Terraform
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Cloud & Virtualisation</div>
+                OpenStack, Kubernetes, Docker, Helm, Multi-Cluster Management, Cloud Privé
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Monitoring & Observabilité</div>
+                Prometheus, Grafana, Elasticsearch, Graylog, Jaeger, OpenTelemetry, AlertManager
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Programmation & Scripting</div>
+                Go (Golang), Python, Bash, Terraform HCL, YAML, Infrastructure APIs
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Sécurité & Conformité</div>
+                Cert-Manager, RBAC, OAuth2/OIDC, Ansible Vault, Infrastructure Security
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Expérience Professionnelle</div>
+        
+        <div class="experience-item">
+            <div class="job-title">Architecte Solutions DevOps</div>
+            <div class="company-info">Skilld | Février 2022 - Présent | Paris, France</div>
+            <ul>
+                <li>Conception et développement de solutions d'automatisation et microservices en Go (Golang), implémentant des patterns de domain driven design.</li>
+                <li>Conception et maintenance d'une infrastructure Kubernetes multi-cluster couvrant les environnements de développement, staging et production, implémentation de helm charts pour le déploiement automatisé des applications.</li>
+                <li>Mise en place d'un système complet de setup de plateforme comprenant un cluster Kubernetes et une dizaine d'applications via des playbooks Ansible, permettant un déploiement standardisé et reproductible.</li>
+                <li>Développement d'un plugin custom Ansible pour récupérer dynamiquement les informations des serveurs bare metal hébergés chez Scaleway et utilisation de ces données pour optimiser le déploiement d'infrastructure.</li>
+                <li>Contribution à l'automatisation de l'infrastructure sur des serveurs bare metal utilisant Ansible, supportant la configuration et le déploiement d'applications distribuées.</li>
+                <li>Mise en place d'une stack de monitoring et d'observabilité robuste utilisant Prometheus, Grafana, et Elasticsearch, création de tableaux de bord personnalisés et d'alertes pour un suivi système complet.</li>
+                <li>Implémentation d'un système de traçage distribué utilisant OpenTelemetry (OTEL) pour une visibilité de bout en bout des microservices, améliorant les capacités de dépannage et l'optimisation des performances.</li>
+                <li>Conception et implémentation d'un système d'authentification SSO complet utilisant la stack Ory (Kratos, OAuthKeeper, Hydra) pour gérer l'authentification et l'autorisation à travers multiples applications, tout en respectant les standards OIDC/OAuth2.</li>
+                <li>Automatisation des workflows de déploiement et configuration via GitLab CI, réduisant les interventions manuelles et améliorant la fiabilité du processus de livraison.</li>
+                <li>Documentation détaillée des architectures techniques et création de guides pour faciliter l'adoption des nouvelles solutions par les équipes.</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Ingénieur Logiciel Freelance</div>
+            <div class="company-info">idatase GmbH | Janvier 2024 - Mars 2024 | Télétravail</div>
+            <ul>
+                <li>Implémentation d'architecture microservices containerisée utilisant Docker Compose et Kubernetes.</li>
+                <li>Création de pipeline de test et déploiement automatisé utilisant GitHub Actions.</li>
+                <li>Développement de pipeline d'ingestion de données évolutif utilisant Python/Flask et PostgreSQL.</li>
+                <li>Conception et implémentation d'un système de collecte de métriques en temps réel.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Projets Open Source</div>
+        <div class="project-item">
+            <span class="project-title">Go-mail</span> - 
+            <a href="https://github.com/wneessen/go-mail/" class="project-link">Open Source</a>
+            <br>
+            Développement en Go du pattern d'architecture middleware et implémentation du middleware de chiffrement OpenPGP avec couverture de tests complète.
+        </div>
+        <div class="project-item">
+            <span class="project-title">Go-RTE</span> - 
+            <a href="https://github.com/dhia-gharsallaoui/gorte" class="project-link">Open Source</a>
+            <br>
+            Création d'une bibliothèque client Go pour les APIs RTE avec une façon propre et uniforme d'interagir avec différents endpoints API.
+        </div>
+        <div class="project-item">
+            <span class="project-title">Mage-ai</span> - 
+            <a href="https://github.com/mage-ai/mage-ai" class="project-link">Open Source</a>
+            <br>
+            Implémentation de l'authentification LDAP, intégration Apache Druid, et système de logging centralisé en Python.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Formation</div>
+        <div class="experience-item">
+            <div class="job-title">Master en Informatique</div>
+            <div class="company-info">MINES ParisTech | 2020 - 2021</div>
+            <div class="company-info">Mineure en Mathématiques | Spécialisation en Systèmes Distribués et Cloud Computing</div>
+        </div>
+        <div class="experience-item">
+            <div class="job-title">Diplôme d'Ingénieur en Génie Industriel</div>
+            <div class="company-info">ENIT | 2018 - 2021</div>
+            <div class="company-info">Mineure en Data Science | Spécialisation en Big Data Analytics</div>
+        </div>
+    </div>
+</body>
+</html>
