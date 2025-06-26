@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhia Eddine Gharsallaoui - Backend Engineer (Golang)</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            color: #2d3748;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #1a202c;
+        }
+        
+        .title {
+            font-size: 1.3rem;
+            color: #00ADD8;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+        
+        .section {
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-bottom: 2px solid #00ADD8;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            color: #2d3748;
+        }
+        
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .job-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: #1a202c;
+        }
+        
+        .company-info {
+            font-style: italic;
+            color: #4a5568;
+            margin-bottom: 0.5rem;
+        }
+        
+        ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-category {
+            margin-bottom: 1rem;
+        }
+        
+        .skill-title {
+            font-weight: bold;
+            color: #1a202c;
+            margin-bottom: 0.25rem;
+        }
+        
+        .project-item {
+            margin-bottom: 1rem;
+        }
+        
+        .project-title {
+            font-weight: bold;
+            color: #1a202c;
+        }
+        
+        .project-link {
+            color: #00ADD8;
+            text-decoration: none;
+        }
+        
+        .project-link:hover {
+            text-decoration: underline;
+        }
+        
+        .highlight {
+            background-color: #e6f7ff;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+            color: #00ADD8;
+        }
+        
+        .go-highlight {
+            background-color: #00ADD8;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            font-weight: 600;
+        }
+        
+        .code-snippet {
+            background-color: #f7fafc;
+            border-left: 4px solid #00ADD8;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">Dhia Eddine Gharsallaoui</div>
+        <div class="title">Backend Engineer (Golang) & Distributed Systems Architect</div>
+        <div class="contact-info">
+            Paris, Ile-de-France, France | gharsallaoui.dhia@gmail.com | 07 58 77 03 14 | 
+            <a href="https://www.linkedin.com/in/gharsallaoui-dhia-eddine/" class="project-link">LinkedIn</a> | 
+            <a href="https://dhia-gharsallaoui.github.io" class="project-link">Portfolio</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Summary</div>
+        <p>Backend Engineer specializing in Golang with experience building cloud-native systems and distributed platforms. Proficient in Go concurrency patterns, microservices architecture, and container orchestration. Proven track record developing production-grade Go applications for distributed systems, multi-cloud environments, and real-time processing systems. Strong background in startup environments with entrepreneurial mindset.</p>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Backend Engineering Experience</div>
+        
+        <div class="experience-item">
+            <div class="job-title">Backend Engineer & Solution Architect</div>
+            <div class="company-info">Skilld | February 2022 - Present | Paris, France</div>
+            <ul>
+                <li>Designed and developed scalable microservices using Golang, implementing domain-driven design principles and clean architecture patterns for distributed systems</li>
+                <li>Architected and maintained multi-cluster Kubernetes infrastructure with comprehensive observability stack using Prometheus, Grafana, and OpenTelemetry</li>
+                <li>Implemented enterprise-wide SSO using Ory ecosystem (Kratos, Hydra, Oathkeeper), supporting multiple authentication providers and RBAC</li>
+                <li>Engineered data processing pipelines using Apache Spark and Delta Lake, implementing data quality checks and real-time analytics with Apache Druid integration</li>
+                <li>Built event-driven architecture using Apache Kafka, NATS, and Redis, enabling real-time event processing with automated scaling capabilities</li>
+                <li>Developed infrastructure automation on bare metal servers using Ansible, implementing GitLab CI pipelines for continuous deployment</li>
+                <li>Created centralized logging architecture using Graylog and Elasticsearch, implementing custom parsing rules and alerting mechanisms</li>
+                <li>Integrated Hive Metastore and implemented data catalog management, improving data discovery and governance</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Backend Blockchain Engineer</div>
+            <div class="company-info">ChainsAtlas | March 2024 - Present</div>
+            <ul>
+                <li>Developed backend services in Golang for interacting with smart contracts EVM (ERC-20, ERC-721)</li>
+                <li>Developed and optimized multi-chain bridge protocols integrating EVM-compatible chains with XRPL, implementing secure cross-chain asset transfers and NFT operations</li>
+                <li>Built blockchain gaming reward systems with multi-signature validation, incorporating retry logic and nonce management for improved transaction reliability</li>
+                <li>Created verifier and guardian systems for secure cross-chain operations, implementing comprehensive security protocols and monitoring</li>
+                <li>Designed and implemented agnostic blockchain operations using Solidity and TypeScript, focusing on secure multi-signature wallet functionalities</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-title">Backend Engineer</div>
+            <div class="company-info">idatase GmbH | January 2024 - March 2024 | Remote</div>
+            <ul>
+                <li>Developed scalable data ingestion pipeline using Python/Flask and PostgreSQL, implementing comprehensive monitoring and error handling</li>
+                <li>Implemented containerized microservices architecture using Docker Compose and Kubernetes, with automated deployment pipelines</li>
+                <li>Designed and implemented real-time metrics collection system with custom dashboards and alerting rules</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Technical Skills & Backend Expertise</div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-title">Programming Languages</div>
+                Go (Golang), Python, Scala, Solidity, TypeScript
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Backend & APIs</div>
+                RESTful APIs, gRPC, Microservices Architecture, Clean Architecture, Domain-Driven Design
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Cloud-Native & Containers</div>
+                Kubernetes, Docker, Helm, Container Runtimes, Multi-cluster Management
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Cloud Platforms</div>
+                Digital Ocean, OVH, Terraform, Ansible, Infrastructure as Code
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Databases & Caching</div>
+                PostgreSQL, TimescaleDB, Redis, DragonflyDB, Apache Cassandra
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Message Queues & Streaming</div>
+                Apache Kafka, NATS, Redis Streams, Event-Driven Architecture
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Monitoring & Observability</div>
+                Prometheus, Grafana, OpenTelemetry, Elasticsearch, Graylog, Jaeger
+            </div>
+            <div class="skill-category">
+                <div class="skill-title">Data Engineering</div>
+                Apache Spark, Delta Lake, Apache Druid, PySpark, Apache Airflow, Hive Metastore
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Key Technical Achievements</div>
+        <div class="project-item">
+            <span class="project-title">Mage-ai Open Source Contribution</span> - 
+            <a href="https://github.com/mage-ai/mage-ai" class="project-link">GitHub Repository</a>
+            <br>
+            Led the implementation of LDAP authentication system and Apache Druid integration, enhancing enterprise security and analytics capabilities. Developed centralized logging system with comprehensive monitoring.
+        </div>
+        <div class="project-item">
+            <span class="project-title">Go-mail Middleware Architecture</span> - 
+            <a href="https://github.com/wneessen/go-mail/" class="project-link">GitHub Repository</a>
+            <br>
+            Architected middleware pattern and implemented OpenPGP encryption with comprehensive test coverage, improving email security and maintainability.
+        </div>
+        <div class="project-item">
+            <span class="project-title">Go-RTE API Client</span> - 
+            <a href="https://github.com/dhia-gharsallaoui/gorte" class="project-link">GitHub Repository</a>
+            <br>
+            Created a Go client library for RTE APIs with clean and uniform interaction patterns, facilitating integration with energy management systems.
+        </div>
+    </div>
+
+
+
+    <div class="section">
+        <div class="section-title">Education</div>
+        <div class="experience-item">
+            <div class="job-title">Master's Degree in Computer Science</div>
+            <div class="company-info">MINES ParisTech | 2020 - 2021</div>
+            <div class="company-info">Minor in Mathematics | Focus on Distributed Systems and Cloud Computing</div>
+        </div>
+        <div class="experience-item">
+            <div class="job-title">Engineer's Degree in Industrial Engineering</div>
+            <div class="company-info">ENIT | 2018 - 2021</div>
+            <div class="company-info">Minor in Data Science | Specialization in Big Data Analytics</div>
+        </div>
+    </div>
+</body>
+</html>
