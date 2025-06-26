@@ -12,7 +12,8 @@ outputs:
     - "HTML"
     - "RSS"
 
-Paginate: 3
+pagination:
+  pagerSize: 3
 enableRobotsTXT: true
 googleAnalytics: G-2Q12XBPN53
 
@@ -79,8 +80,8 @@ params:
     enable: true
     intro: "Hi, I'm"
     title: "Dhia Gharsallaoui"
-    subtitle: "Distributed Platform Architect"
-    content: "A passionate architect combining design and hands-on implementation of cloud-native solutions. I specialize in distributed systems, real-time data processing, and blockchain development."
+    subtitle: "Lead Backend Engineer - DeFi & Blockchain"
+    content: "A passionate backend engineer leading the development of high-performance DeFi trading systems. I specialize in Go backend architecture, blockchain integrations, and building scalable financial infrastructure."
     image: /images/profile.jpg
     button:
       enable: true
@@ -102,79 +103,112 @@ params:
     title: "About Me"
     image: "/images/profile.jpg"
     content: |-
-      A Distributed Platform Architect with 3 years of experience in designing and implementing scalable, cloud-native solutions. I specialize in microservices architecture, distributed data processing, and blockchain development.
+      A Lead Backend Engineer with 4+ years of experience specializing in high-performance DeFi and blockchain systems. I architect and implement scalable backend infrastructure using Go, focusing on real-time trading systems and cross-chain protocols.
 
-      I'm passionate about 📜 open source, ☁️ cloud-native architectures, 🔗 blockchain protocols, and 📊 real-time data platforms. My approach combines architectural excellence with hands-on implementation.
+      I'm passionate about 🔗 blockchain technology, 🏗️ backend architecture, 💱 DeFi protocols, and 📈 high-performance trading systems. My approach combines deep technical expertise with hands-on implementation of mission-critical financial infrastructure.
 
-      Currently focused on building distributed platforms, implementing blockchain bridges, and contributing to open-source projects in data engineering and system integration.
+      Currently leading backend development at Perplex (DeFi trading platform), building smart contract integrations, and contributing to open-source blockchain projects.
     skills:
       enable: true
       title: "Technologies I work with:"
       items:
-        - "Go (Golang)"
-        - "Python"
-        - "Scala"
-        - "Solidity"
+        - "Go (Golang) - Expert"
+        - "Python - Production"
+        - "Rust - Familiar"
+        - "Solidity - Smart Contracts"
         - "TypeScript"
-        - "Kubernetes"
-        - "Docker"
-        - "Ansible"
-        - "Apache Spark"
-        - "Delta Lake"
+        - "Scala"
+        - "REST & GraphQL APIs"
+        - "gRPC & Protocol Buffers"
+        - "Microservices Architecture"
+        - "Event-Driven Systems"
         - "Apache Kafka"
+        - "NATS"
         - "PostgreSQL"
         - "TimescaleDB"
         - "Redis"
+        - "Kubernetes"
+        - "Docker"
+        - "Terraform"
+        - "Ansible"
+        - "Helm"
+        - "ArgoCD"
         - "Prometheus"
         - "Grafana"
-        - "Elasticsearch"
         - "OpenTelemetry"
-        - "Helm"
+        - "Elasticsearch"
+        - "Apache Spark"
+        - "Delta Lake"
         - "GitLab CI"
-        - "Smart Contracts"
-        - "XRPL"
+        - "Digital Ocean"
+        - "OVH"
+        - "Ethereum Protocol"
+        - "Smart Contract Integration"
+        - "Cross-chain Bridges"
+        - "XRPL Integration"
+        - "DeFi Trading Systems"
+        - "On-chain Data Processing"
 
   experience:
     enable: true
     items:
+      - job: "Lead Backend Engineer"
+        company: "Perplex"
+        companyUrl: "#"
+        date: "May 2025 - present"
+        content: |
+          Leading backend architecture and development for a DeFi on-chain trading platform.
+
+          Key Achievements:
+          - Architecting high-performance trading systems in Go handling real-time price feeds and order execution
+          - Building scalable API infrastructure for DeFi trading operations across multiple blockchain networks
+          - Implementing robust on-chain data ingestion pipelines processing millions of transactions daily
+          - Developing smart contract interaction layers for automated trading strategies and liquidity provision
+          - Establishing system architecture patterns for high-availability financial infrastructure
+          - Collaborating with protocol teams to deliver end-to-end trading features and risk management systems
+
       - job: "Solution Architect"
         company: "Skilld"
         companyUrl: "https://skilld.cloud/"
-        date: "February 2022 - present"
+        date: "February 2022 - April 2025"
         featuredLink:
           enable: true
           name: "Company Website"
           url: "https://skilld.cloud/"
         content: |
-          Designing and implementing scalable cloud-native solutions with focus on distributed systems.
+          Designed and implemented scalable backend systems and cloud-native solutions with focus on distributed architectures.
 
           Key Achievements:
-          - Designed and developed scalable microservices using Golang and domain-driven design principles
-          - Designed and maintained multi-cluster Kubernetes infrastructure with helm charts
-          - Engineered monitoring stack using Prometheus, Grafana, and Elasticsearch
-          - Implemented distributed tracing using OpenTelemetry for end-to-end visibility
-          - Developed stream processing pipelines using Apache Spark and Delta Lake
-          - Contributed to infrastructure automation using Ansible
-          - Designed event-driven architecture using Apache Kafka, NATS, and Redis
-          - Implemented SSO integration using Ory ecosystem
-          - Contributed to CI/CD pipeline development using GitLab CI
+          - Architected and developed high-performance microservices in Go using domain-driven design principles
+          - Built event-driven backend systems using Apache Kafka and NATS, processing millions of messages daily
+          - Designed and maintained multi-cluster Kubernetes infrastructure supporting 50+ microservices
+          - Implemented comprehensive API architectures with REST and gRPC services achieving 99.9% uptime
+          - Developed stream processing pipelines using Apache Spark for real-time data analytics and transformation
+          - Built monitoring and observability systems using Prometheus, Grafana, and distributed tracing
+          - Established database optimization strategies with PostgreSQL and Redis, reducing query times by 60%
+          - Provisioned and managed cloud infrastructure using Terraform on Digital Ocean and OVH
+          - Implemented GitOps workflows using ArgoCD for automated deployments and configuration management
+          - Built comprehensive CI/CD pipelines reducing deployment time from hours to minutes
+          - Implemented SSO integration and security hardening practices for production systems
 
-      - job: "Blockchain Developer"
+      - job: "Blockchain Backend Developer"
         company: "ChainsAtlas"
-        date: "March 2024 - present"
+        date: "March 2024 - April 2025"
         featuredLink:
           enable: true
           name: "Company Website"
           url: "https://chainsatlas.com/"
         content: |
-          Specialized in blockchain development and cross-chain solutions.
+          Specialized in blockchain backend development and cross-chain protocol implementation.
 
           Key Projects:
-          - Developed multi-chain bridge protocols integrating EVM-compatible chains with XRPL
-          - Architected battle reward systems with multi-signature validation
-          - Built robust transaction processing systems with retry logic
-          - Designed agnostic blockchain operations with smart contracts
-          - Enhanced blockchain bridging infrastructure with verifier systems
+          - Architected and implemented multi-chain bridge protocols in Go connecting EVM-compatible chains with XRPL
+          - Developed smart contracts in Solidity and deployed across multiple EVM blockchains
+          - Built comprehensive backend systems for smart contract interactions, including automated deployment pipelines
+          - Implemented cryptographic validation systems for cross-chain asset transfers and multi-signature operations
+          - Designed blockchain-agnostic APIs enabling seamless protocol deployment across multiple networks
+          - Built robust transaction processing engines with advanced retry mechanisms and comprehensive error handling
+          - Developed real-time blockchain monitoring systems with alerting for transaction failures and network issues
 
       - job: "Software Engineer"
         company: "idatase GmbH"
