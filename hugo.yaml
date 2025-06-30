@@ -170,7 +170,7 @@ params:
       - job: "Solution Architect"
         company: "Skilld"
         companyUrl: "https://skilld.cloud/"
-        date: "February 2022 - April 2025"
+        date: "August 2021 - April 2025"
         featuredLink:
           enable: true
           name: "Company Website"
@@ -191,7 +191,7 @@ params:
           - Built comprehensive CI/CD pipelines reducing deployment time from hours to minutes
           - Implemented SSO integration and security hardening practices for production systems
 
-      - job: "Blockchain Backend Developer"
+      - job: "Blockchain Engineer"
         company: "ChainsAtlas"
         date: "March 2024 - April 2025"
         featuredLink:
@@ -209,6 +209,9 @@ params:
           - Designed blockchain-agnostic APIs enabling seamless protocol deployment across multiple networks
           - Built robust transaction processing engines with advanced retry mechanisms and comprehensive error handling
           - Developed real-time blockchain monitoring systems with alerting for transaction failures and network issues
+          - Contributed to RWAFi protocol development, building smart contracts in Solidity for institutional-grade real-world asset infrastructure that bridges DeFi liquidity with traditional finance security
+          - Worked on blockchain wallet extension development, adding EVM-based blockchain support to enhance multi-chain wallet functionality and cross-chain asset management
+          - Contributed to building a prototype of an agentic blockchain from scratch, implementing autonomous agent consensus mechanisms and smart contract execution for AI-driven blockchain operations
 
       - job: "Software Engineer"
         company: "idatase GmbH"
@@ -259,7 +262,7 @@ params:
     enable: true
     items:
       - title: "Mage-ai"
-        content: "Implemented LDAP authentication, Apache Druid integration, and centralized logging system for this open-source data pipeline tool."
+        content: "Implemented LDAP authentication, Apache Druid integration, and centralized logging system for this open-source data pipeline tool with 8K+ GitHub stars."
         image: /images/projects/mage-ai.png
         featured:
           name: "View Project"
@@ -299,6 +302,21 @@ params:
         links:
           - icon: fab fa-github
             url: https://github.com/dhia-gharsallaoui/gorte
+
+      - title: "Kratos Admin UI"
+        content: "A modern, responsive admin interface for Ory Kratos identity management system. Features identity management, session monitoring, analytics dashboard, and schema inspection."
+        image: /images/projects/kratos-admin-ui.png
+        featured:
+          name: "View Project"
+          link: "https://github.com/dhia-gharsallaoui/kratos-admin-ui"
+        badges:
+          - "React"
+          - "TypeScript"
+          - "Ory Kratos"
+          - "Identity Management"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/dhia-gharsallaoui/kratos-admin-ui
 
   # achievements:
   #   enable: true
