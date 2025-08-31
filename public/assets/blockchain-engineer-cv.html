@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhia Gharsallaoui - Blockchain Engineer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #f7931a;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #f7931a;
+        }
+        .header h2 {
+            margin: 5px 0 15px 0;
+            font-size: 1.3em;
+            color: #666;
+            font-weight: normal;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .contact-info a {
+            color: #f7931a;
+            text-decoration: none;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h3 {
+            color: #f7931a;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 25px;
+        }
+        .job-header, .edu-header, .project-header {
+            margin-bottom: 8px;
+        }
+        .job-title, .degree-title, .project-title {
+            font-size: 1.1em;
+            color: #333;
+            margin: 0;
+        }
+        .company, .school, .project-tech {
+            color: #f7931a;
+            font-weight: 500;
+        }
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+        .job-details, .project-details {
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .skill-category h4 {
+            color: #f7931a;
+            margin: 0 0 8px 0;
+            font-size: 1em;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skill-list li {
+            background: #fff8f0;
+            padding: 4px 8px;
+            margin: 2px 0;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .summary {
+            background: #fff8f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            font-style: italic;
+            border-left: 4px solid #f7931a;
+        }
+        .highlight {
+            background: #fff8f0;
+            padding: 10px;
+            border-radius: 3px;
+            margin: 5px 0;
+            border-left: 3px solid #f7931a;
+        }
+        @media print {
+            body {
+                font-size: 9pt;
+                line-height: 1.2;
+                margin: 10px;
+                padding: 10px;
+                max-width: none;
+            }
+            .header {
+                margin-bottom: 15px;
+                padding-bottom: 10px;
+                page-break-inside: avoid;
+            }
+            .header h1 {
+                font-size: 18pt;
+                margin: 0;
+            }
+            .header h2 {
+                font-size: 12pt;
+                margin: 2px 0 8px 0;
+            }
+            .contact-info {
+                font-size: 8pt;
+            }
+            .section {
+                margin-bottom: 12px;
+                page-break-inside: avoid;
+            }
+            .section h3 {
+                font-size: 11pt;
+                margin-bottom: 8px;
+            }
+            .experience-item, .education-item, .project-item {
+                margin-bottom: 8px;
+                page-break-inside: avoid;
+            }
+            .job-title, .degree-title, .project-title {
+                font-size: 9pt;
+            }
+            .job-details, .project-details {
+                font-size: 8pt;
+                line-height: 1.1;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 8px;
+            }
+            .skill-category h4 {
+                font-size: 8pt;
+                margin-bottom: 4px;
+            }
+            .skill-list li {
+                font-size: 7pt;
+                padding: 2px 4px;
+                margin: 1px 0;
+            }
+            .summary {
+                padding: 8px;
+                font-size: 8pt;
+                margin-bottom: 10px;
+            }
+            .highlight {
+                padding: 4px;
+                font-size: 8pt;
+                margin: 2px 0;
+            }
+            .date {
+                font-size: 7pt;
+            }
+            br {
+                line-height: 0.8;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dhia Gharsallaoui</h1>
+        <h2>Blockchain Engineer - Protocol Development</h2>
+        <div class="contact-info">
+            <a href="mailto:gharsallaoui.dhia@gmail.com">gharsallaoui.dhia@gmail.com</a> • 
+            <a href="https://github.com/dhia-gharsallaoui">github.com/dhia-gharsallaoui</a> • 
+            <a href="https://linkedin.com/in/gharsallaoui-dhia-eddine">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="summary">
+            <strong>Software Engineer with 4+ years of development experience and 2+ years focused on blockchain engineering.</strong> Deep expertise in Go development, distributed systems architecture, and cross-chain protocol development. Proven experience building EVM integrations, multi-chain bridge systems, and high-performance blockchain infrastructure. Strong background in scalable microservices, real-time data processing, and secure distributed systems.
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <ul class="skill-list">
+                    <li>Go (Golang)</li>
+                    <li>Python</li>
+                    <li>Solidity</li>
+                    <li>TypeScript</li>
+                    <li>Scala</li>
+                    <li>Lua</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Blockchain & Protocols</h4>
+                <ul class="skill-list">
+                    <li>Ethereum/EVM Integration</li>
+                    <li>Cross-chain Bridges</li>
+                    <li>Smart Contract Integration</li>
+                    <li>XRPL Protocol</li>
+                    <li>Multi-signature Systems</li>
+                    <li>Transaction Processing</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Distributed Systems</h4>
+                <ul class="skill-list">
+                    <li>Microservices Architecture</li>
+                    <li>Event-Driven Systems</li>
+                    <li>Apache Kafka</li>
+                    <li>Real-time Processing</li>
+                    <li>High-Throughput APIs</li>
+                    <li>Load Balancing</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Infrastructure & DevOps</h4>
+                <ul class="skill-list">
+                    <li>Kubernetes</li>
+                    <li>Docker</li>
+                    <li>PostgreSQL</li>
+                    <li>Redis</li>
+                    <li>Monitoring (Prometheus)</li>
+                    <li>CI/CD Pipelines</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Professional Experience</h3>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Lead Backend Engineer</h4>
+                <div><span class="company">Perplex - DeFi Trading Platform</span> • <span class="date">April 2025 - Present</span></div>
+            </div>
+            <div class="job-details">
+                Leading backend development for on-chain trading platform serving DeFi protocols and traders.
+                <br><br>
+                • Go Backend Development: Architecting and implementing high-performance trading systems in Golang, handling real-time price feeds and order execution
+                <br>
+                • On-chain Trading Logic: Contributing to the development of on-chain trading logic and smart contract integration for automated trading strategies
+                <br>
+                • Blockchain Integration: Building backend systems that consume on-chain data from Arweave and AO blockchain networks for decentralized data storage and processing
+                <br>
+                • Building robust on-chain data ingestion pipelines processing millions of transactions daily
+                <br>
+                • Designing scalable API architecture for DeFi trading operations across multiple blockchain networks
+                <br>
+                • Establishing high-availability infrastructure with zero-downtime deployments
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Blockchain Engineer</h4>
+                <div><span class="company">ChainsAtlas</span> • <span class="date">March 2024 - April 2025</span></div>
+            </div>
+            <div class="job-details">
+                Developed backend systems for blockchain protocols and cross-chain infrastructure.
+                <br><br>
+                • Cross-chain Protocol Development: Architected multi-chain bridge backend systems connecting EVM-compatible chains with XRPL, handling secure cross-chain asset transfers
+                <br>
+                • Smart Contract Integration: Built backend services in Go for interacting with EVM smart contracts (ERC-20, ERC-721) with robust transaction processing
+                <br>
+                • Implemented blockchain gaming reward systems with multi-signature validation and comprehensive retry logic
+                <br>
+                • Created verifier and guardian systems for secure cross-chain operations with monitoring and alerting
+                <br>
+                • Designed blockchain-agnostic operations using Solidity and TypeScript for multi-signature wallet functionalities
+                <br>
+                • Built real-time blockchain monitoring systems with transaction failure detection and recovery
+                <br>
+                • Contributed to RWAFi protocol development, building smart contracts in Solidity for institutional-grade real-world asset infrastructure that bridges DeFi liquidity with traditional finance security
+                <br>
+                • Worked on blockchain wallet extension development, adding EVM-based blockchain support to enhance multi-chain wallet functionality and cross-chain asset management
+                <br>
+                • Contributed to building a prototype of an agentic blockchain from scratch, implementing autonomous agent consensus mechanisms and smart contract execution for AI-driven blockchain operations
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Backend Solution Architect</h4>
+                <div><span class="company">Skilld</span> • <span class="date">August 2021 - April 2025</span></div>
+            </div>
+            <div class="job-details">
+                Architected and built scalable backend systems and distributed infrastructure.
+                <br><br>
+                • Go Microservices Development: Designed and developed high-performance microservices in Golang using domain-driven design principles, serving 10M+ requests daily
+                <br>
+                • Built event-driven architectures using Apache Kafka and NATS, processing real-time data streams
+                <br>
+                • Implemented comprehensive API design patterns with REST and gRPC services, achieving 99.9% uptime
+                <br>
+                • Developed stream processing pipelines using Apache Spark for real-time analytics
+                <br>
+                • Established monitoring and observability systems with Prometheus, Grafana, and distributed tracing
+                <br>
+                • Implemented database optimization strategies with PostgreSQL and Redis, reducing response times by 60%
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Backend Software Engineer</h4>
+                <div><span class="company">idatase GmbH</span> • <span class="date">January 2024 - March 2024</span></div>
+            </div>
+            <div class="job-details">
+                Built scalable data processing backends and APIs for high-volume systems.
+                <br><br>
+                • Developed high-throughput data ingestion APIs using Python/Flask and PostgreSQL, processing 100K+ records hourly
+                <br>
+                • Implemented containerized microservices architecture with Docker and Kubernetes deployment
+                <br>
+                • Built real-time metrics collection systems and alerting infrastructure
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Education</h3>
+        
+        <div class="education-item">
+            <div class="edu-header">
+                <h4 class="degree-title">Master's Degree in Computer Science</h4>
+                <div><span class="school">MINES ParisTech</span> • <span class="date">2020 - 2021</span></div>
+            </div>
+            <div>Focus on Distributed Systems and Cloud Computing • Minor in Mathematics</div>
+        </div>
+
+        <div class="education-item">
+            <div class="edu-header">
+                <h4 class="degree-title">Engineer's Degree in Industrial Engineering</h4>
+                <div><span class="school">ENIT</span> • <span class="date">2018 - 2021</span></div>
+            </div>
+            <div>Specialization in Big Data Analytics • Minor in Data Science</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Open Source Contributions & Projects</h3>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/wneessen/go-mail" style="color: #333; text-decoration: none;">Go-mail - Email Security Library</a></h4>
+                <div class="project-tech">Go • OpenPGP • Cryptographic Security</div>
+            </div>
+            <div class="project-details">
+                Architected middleware patterns and implemented OpenPGP encryption, demonstrating advanced Go design patterns and cryptographic security implementation relevant to blockchain development.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/go-rte" style="color: #333; text-decoration: none;">Go-RTE - API Client Library</a></h4>
+                <div class="project-tech">Go • REST API • Client Libraries</div>
+            </div>
+            <div class="project-details">
+                Built production-ready Go SDK with comprehensive error handling, rate limiting, and clean interface design, showcasing expertise in Go library development for distributed systems.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/mage-ai/mage-ai" style="color: #333; text-decoration: none;">Mage-ai - Data Pipeline Platform</a></h4>
+                <div class="project-tech">Python • Apache Druid • Authentication Systems</div>
+            </div>
+            <div class="project-details">
+                Contributed authentication backend, Apache Druid integration, and logging infrastructure to production platform with 8K+ GitHub stars.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/kratos-admin-ui" style="color: #333; text-decoration: none;">Kratos Admin UI - Identity Management Interface</a></h4>
+                <div class="project-tech">React • TypeScript • Ory Kratos • Identity Management</div>
+            </div>
+            <div class="project-details">
+                A modern, responsive admin interface for Ory Kratos identity management system. Features identity management, session monitoring, analytics dashboard, and schema inspection.
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Key Achievements</h3>
+        <div class="highlight">
+            <strong>• Cross-chain Infrastructure:</strong> Successfully built and deployed multi-chain bridge protocols connecting EVM networks with XRPL for secure asset transfers
+        </div>
+        <div class="highlight">
+            <strong>• High-Performance Go Systems:</strong> Architected distributed systems in Go handling 10M+ daily requests with sub-second latency
+        </div>
+        <div class="highlight">
+            <strong>• Blockchain Integration:</strong> Implemented robust smart contract interaction systems with comprehensive error handling and transaction processing
+        </div>
+        <div class="highlight">
+            <strong>• Security Systems:</strong> Built multi-signature validation systems and cryptographic security protocols for blockchain operations
+        </div>
+        <div class="highlight">
+            <strong>• Open Source Contributions:</strong> Active contributor to Go ecosystem with focus on security, cryptography, and distributed systems
+        </div>
+    </div>
+</body>
+</html>

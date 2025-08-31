@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhia Gharsallaoui - Ingénieur Backend Senior</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #0077b6;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #0077b6;
+        }
+        .header h2 {
+            margin: 5px 0 15px 0;
+            font-size: 1.3em;
+            color: #666;
+            font-weight: normal;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .contact-info a {
+            color: #0077b6;
+            text-decoration: none;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h3 {
+            color: #0077b6;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 25px;
+        }
+        .job-header, .edu-header, .project-header {
+            margin-bottom: 8px;
+        }
+        .job-title, .degree-title, .project-title {
+            font-size: 1.1em;
+            color: #333;
+            margin: 0;
+        }
+        .company, .school, .project-tech {
+            color: #0077b6;
+            font-weight: 500;
+        }
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+        .job-details, .project-details {
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-top: 8px;
+        }
+        .skill-category h4 {
+            color: #0077b6;
+            margin: 0 0 8px 0;
+            font-size: 1em;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skill-list li {
+            background: #f8fafc;
+            padding: 4px 8px;
+            margin: 2px 0;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .summary {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+        @media print {
+            body {
+                font-size: 8pt;
+                line-height: 1.1;
+                margin: 8px;
+                padding: 5px;
+                max-width: none;
+            }
+            .header {
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+                page-break-inside: avoid;
+            }
+            .header h1 {
+                font-size: 16pt;
+                margin: 0;
+            }
+            .header h2 {
+                font-size: 10pt;
+                margin: 1px 0 5px 0;
+            }
+            .contact-info {
+                font-size: 7pt;
+            }
+            .section {
+                margin-bottom: 8px;
+                page-break-inside: avoid;
+            }
+            .section h3 {
+                font-size: 10pt;
+                margin-bottom: 5px;
+            }
+            .experience-item, .education-item, .project-item {
+                margin-bottom: 6px;
+                page-break-inside: avoid;
+            }
+            .job-title, .degree-title, .project-title {
+                font-size: 8pt;
+            }
+            .job-details, .project-details {
+                font-size: 7pt;
+                line-height: 1.0;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(6, 1fr);
+                gap: 4px;
+            }
+            .skill-category h4 {
+                font-size: 7pt;
+                margin-bottom: 2px;
+            }
+            .skill-list li {
+                font-size: 6pt;
+                padding: 1px 3px;
+                margin: 0.5px 0;
+            }
+            .summary {
+                padding: 5px;
+                font-size: 7pt;
+                margin-bottom: 8px;
+            }
+            .date {
+                font-size: 6pt;
+            }
+            br {
+                line-height: 0.6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dhia Gharsallaoui</h1>
+        <h2>Ingénieur Backend Senior - SRE</h2>
+        <div class="contact-info">
+            <a href="mailto:gharsallaoui.dhia@gmail.com">gharsallaoui.dhia@gmail.com</a> •
+            <a href="https://github.com/dhia-gharsallaoui">github.com/dhia-gharsallaoui</a> •
+            <a href="https://linkedin.com/in/gharsallaoui-dhia-eddine">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="summary">
+            Lead Backend/Devops avec 4+ années d'expérience dans la conception et la construction de systèmes distribués
+haute performance. Actuellement responsable du développement backend pour une plateforme de trading DeFi, avec une expertise
+approfondie en Golang, intégrations blockchain, et infrastructure de trading temps réel. Expérience éprouvée dans les startups
+ crypto, la construction d'APIs scalables, et l'implémentation de systèmes critiques pour les applications financières.
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Compétences Techniques</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Langages de Programmation</h4>
+                <ul class="skill-list">
+                    <li>Go (Golang)</li>
+                    <li>Python</li>
+                    <li>Solidity</li>
+                    <li>TypeScript</li>
+                    <li>Scala</li>
+                    <li>Lua</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Architecture Backend</h4>
+                <ul class="skill-list">
+                    <li>Conception Microservices</li>
+                    <li>Systèmes Event-Driven</li>
+                    <li>Domain-Driven Design</li>
+                    <li>Clean Architecture</li>
+                    <li>Patterns de Conception API</li>
+                    <li>Intégration de Systèmes</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>APIs & Protocoles</h4>
+                <ul class="skill-list">
+                    <li>REST & GraphQL</li>
+                    <li>gRPC & Protocol Buffers</li>
+                    <li>WebSocket Temps Réel</li>
+                    <li>Files de Messages</li>
+                    <li>Apache Kafka</li>
+                    <li>NATS Streaming</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Bases de Données & Stockage</h4>
+                <ul class="skill-list">
+                    <li>PostgreSQL</li>
+                    <li>TimescaleDB</li>
+                    <li>Redis Caching</li>
+                    <li>Elasticsearch</li>
+                    <li>Apache Druid</li>
+                    <li>Modélisation de Données</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>DevOps & Cloud</h4>
+                <ul class="skill-list">
+                    <li>Orchestration Kubernetes</li>
+                    <li>Containerisation Docker</li>
+                    <li>Terraform IaC</li>
+                    <li>Configuration Ansible</li>
+                    <li>ArgoCD GitOps</li>
+                    <li>Automatisation CI/CD</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>DeFi & Blockchain</h4>
+                <ul class="skill-list">
+                    <li>Protocole Ethereum</li>
+                    <li>Intégration Smart Contracts</li>
+                    <li>Ponts Cross-chain</li>
+                    <li>Systèmes de Trading DEX</li>
+                    <li>Traitement de Données On-chain</li>
+                    <li>Portefeuilles Multi-signature</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Expérience Professionnelle</h3>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Ingénieur Backend Lead</h4>
+                <div><span class="company">Perplex - Plateforme de Trading DeFi</span> • <span class="date">Avril 2025 -
+Présent</span></div>
+            </div>
+            <div class="job-details">
+                Direction de l'architecture et du développement backend pour une plateforme de trading on-chain servant les
+protocoles DeFi et les traders.
+                <br><br>
+                • Architecture et implémentation de systèmes backend de trading haute performance en Golang et Python, gérant
+les flux de prix temps réel et l'exécution d'ordres
+                <br>
+                • Conception d'architecture API scalable pour les opérations de trading DeFi, supportant plusieurs réseaux
+blockchain et intégrations DEX
+                <br>
+                • Construction de pipelines robustes d'ingestion de données on-chain traitant des millions de transactions
+quotidiennes avec des exigences de latence sub-seconde utilisant Python pour le traitement de données et Golang pour les
+services API
+                <br>
+                • Implémentation de couches d'interaction avec les smart contracts pour les stratégies de trading automatisées
+ et la fourniture de liquidité
+                <br>
+                • Établissement de patterns d'architecture système pour une infrastructure de trading haute disponibilité avec
+ des déploiements sans interruption
+                <br>
+                • Conception et implémentation de l'architecture complète de l'infrastructure à partir de zéro, incluant la
+topologie réseau, les politiques de sécurité, et les frameworks de scalabilité
+                <br>
+                • Provisionnement d'infrastructure multi-cloud utilisant Terraform sur les plateformes Digital Ocean et
+OVHCloud, assurant l'optimisation des coûts et la redondance géographique
+                <br>
+                • Déploiement et gestion de clusters Kubernetes de production avec des fonctionnalités d'orchestration
+avancées incluant l'auto-scaling, les health checks, et la gestion des ressources pour les services backend
+                <br>
+                • Intégration d'Ansible pour la gestion automatisée de configuration et déploiement de clusters Kubernetes
+avec ArgoCD pour le déploiement continu basé sur GitOps
+                <br>
+                • Collaboration avec les équipes frontend et protocole pour livrer des fonctionnalités de trading end-to-end
+et des systèmes de gestion des risques
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Architecte de Solutions Backend</h4>
+                <div><span class="company">Skilld</span> • <span class="date">Août 2021 - Avril 2025</span></div>
+            </div>
+            <div class="job-details">
+                Architecture et construction de systèmes backend scalables et d'infrastructure distribuée pour les
+applications cloud-native.
+                <br><br>
+                • Conception et développement de microservices haute performance en Golang et Python utilisant les principes
+de domain-driven design, servant 10M+ requêtes quotidiennes
+                <br>
+                • Construction d'architectures event-driven utilisant Apache Kafka et NATS, traitant des flux de données temps
+ réel avec garantie de livraison de messages
+                <br>
+                • Implémentation de patterns de conception API complets avec services REST et gRPC, atteignant 99.9% de
+disponibilité sur les systèmes distribués
+                <br>
+                • Développement de pipelines de traitement de flux utilisant Apache Spark et Python pour l'analyse temps réel
+et la transformation de données
+                <br>
+                • Déploiement et gestion de multiples clusters Kubernetes de production avec des fonctionnalités avancées
+incluant les opérateurs personnalisés, contrôleurs d'entrée, intégration de service mesh, et politiques d'auto-scaling
+                <br>
+                • Établissement de stacks d'observabilité complètes avec Grafana, OpenTelemetry, Loki, et Prometheus pour la
+surveillance et l'alerte full-stack
+                <br>
+                • Implémentation de stratégies d'optimisation de base de données avec PostgreSQL et Redis, réduisant les temps
+ de réponse des requêtes de 60%
+                <br>
+                • Construction de pipelines CI/CD et automatisation d'infrastructure réduisant le temps de déploiement
+d'heures à minutes
+                <br>
+                • Développement de plugins d'inventaire Ansible personnalisés et de solutions de gestion d'état pour le
+provisionnement d'infrastructure dynamique et la gestion de configuration
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Développeur Backend Blockchain</h4>
+                <div><span class="company">ChainsAtlas</span> • <span class="date">Mars 2024 - Avril 2025</span></div>
+            </div>
+            <div class="job-details">
+                Développement de systèmes backend pour les protocoles blockchain et l'infrastructure cross-chain dans une
+startup crypto.
+                <br><br>
+                • Architecture de systèmes backend de pont multi-chaînes connectant les réseaux EVM avec XRPL, gérant les
+transferts d'actifs cross-chain
+                <br>
+                • Construction de moteurs de traitement de transactions haute performance avec mécanismes de retry et gestion
+d'erreurs complète
+                <br>
+                • Implémentation de systèmes de validation cryptographique pour les opérations multi-signature et la gestion
+sécurisée d'actifs
+                <br>
+                • Conception d'APIs blockchain-agnostiques permettant le déploiement de protocoles sur plusieurs réseaux
+                <br>
+                • Développement de systèmes de surveillance blockchain temps réel avec alertes pour les échecs de transaction
+et les problèmes réseau
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Ingénieur Logiciel Backend</h4>
+                <div><span class="company">idatase GmbH</span> • <span class="date">Janvier 2024 - Mars 2024</span></div>
+            </div>
+            <div class="job-details">
+                Construction de backends de traitement de données scalables et d'APIs pour des systèmes d'ingestion de données
+ haute volume.
+                <br><br>
+                • Développement d'APIs d'ingestion de données haut débit utilisant Python/Flask et PostgreSQL, traitant 100K+
+enregistrements par heure avec traitement par lots optimisé
+                <br>
+                • Implémentation d'architecture microservices containerisée avec déploiement Docker et Kubernetes, incluant
+l'auto-scaling de pods et l'optimisation de ressources
+                <br>
+                • Construction de systèmes de collecte de métriques temps réel et d'infrastructure d'alerte pour surveiller
+les performances du système utilisant des services de surveillance basés sur Python
+                <br>
+                • Établissement de pipelines de test et déploiement automatisés avec GitHub Actions, incluant l'automatisation
+ de tests Python et les mises à jour Kubernetes rolling
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Formation</h3>
+
+        <div class="education-item">
+            <div class="edu-header">
+                <h4 class="degree-title">Master en Informatique</h4>
+                <div><span class="school">MINES ParisTech</span> • <span class="date">2020 - 2021</span></div>
+            </div>
+            <div>Spécialisation en Systèmes Distribués et Cloud Computing • Mineure en Mathématiques</div>
+        </div>
+
+        <div class="education-item">
+            <div class="edu-header">
+                <h4 class="degree-title">Diplôme d'Ingénieur en Génie Industriel</h4>
+                <div><span class="school">ENIT</span> • <span class="date">2018 - 2021</span></div>
+            </div>
+            <div>Spécialisation en Analyse de Big Data • Mineure en Data Science</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Contributions Open Source & Projets</h3>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/mage-ai/mage-ai" style="color: #333; text-decoration:
+none;">Mage-ai - Plateforme de Pipeline de Données</a></h4>
+                <div class="project-tech">Python • Apache Druid • Systèmes d'Authentification</div>
+            </div>
+            <div class="project-details">
+                Contribution au backend d'authentification, intégration Apache Druid, et infrastructure de logging pour une
+plateforme de pipeline de données en production avec 8K+ étoiles GitHub.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/wneessen/go-mail" style="color: #333; text-decoration:
+none;">Go-mail - Bibliothèque Client Email</a></h4>
+                <div class="project-tech">Go • OpenPGP • Pattern Middleware</div>
+            </div>
+            <div class="project-details">
+                Architecture du pattern middleware et implémentation du chiffrement OpenPGP pour les communications email
+sécurisées, démontrant des patterns de conception Go avancés.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/go-rte" style="color: #333;
+text-decoration: none;">Go-RTE - SDK Client API</a></h4>
+                <div class="project-tech">Go • REST API • Bibliothèques Client</div>
+            </div>
+            <div class="project-details">
+                Construction d'un SDK Go prêt pour la production pour les APIs RTE avec gestion d'erreurs complète, limitation
+ de taux, et conception d'interface propre.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/kratos-admin-ui" style="color: #333;
+text-decoration: none;">Kratos Admin UI - Gestion d'Identité</a></h4>
+                <div class="project-tech">React • TypeScript • Ory Kratos • Systèmes d'Identité</div>
+            </div>
+            <div class="project-details">
+                Interface d'administration moderne et responsive pour le système de gestion d'identité Ory Kratos avec gestion
+ d'identité, surveillance de sessions, et tableau de bord analytique.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

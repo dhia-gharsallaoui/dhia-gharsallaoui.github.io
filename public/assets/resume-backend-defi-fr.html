@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhia Gharsallaoui - Ingénieur Backend Senior</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
+            color: #1a1a1a;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 25px;
+            background: #ffffff;
+            font-size: 14px;
+        }
+        
+        .header {
+            text-align: left;
+            border-bottom: 2px solid #2563eb;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #10b981;
+        }
+        
+        .header h1 {
+            font-size: 2.2em;
+            color: #1a1a1a;
+            font-weight: 700;
+            margin-bottom: 4px;
+            letter-spacing: -0.02em;
+        }
+        
+        .header h2 {
+            font-size: 1.1em;
+            color: #4b5563;
+            font-weight: 400;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+        
+        .contact-info {
+            font-size: 0.9em;
+            color: #6b7280;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section h3 {
+            color: #1a1a1a;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 15px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .section h3::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3px;
+            height: 18px;
+            background: #2563eb;
+            border-radius: 2px;
+        }
+        
+        .section h3::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background: #2563eb;
+            border-radius: 1px;
+        }
+        
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 18px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 3px solid #2563eb;
+            page-break-inside: avoid;
+        }
+        
+        .job-header, .edu-header, .project-header {
+            margin-bottom: 8px;
+        }
+        
+        .job-title, .degree-title, .project-title {
+            font-size: 1.05em;
+            color: #1a1a1a;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .company, .school, .project-tech {
+            color: #2563eb;
+            font-weight: 500;
+            font-size: 0.95em;
+        }
+        
+        .date {
+            color: #6b7280;
+            font-weight: 400;
+            font-size: 0.85em;
+        }
+        
+        .job-details, .project-details {
+            margin-top: 10px;
+            line-height: 1.5;
+            color: #374151;
+            font-size: 0.95em;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .skill-category {
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 4px;
+            border-left: 2px solid #10b981;
+            page-break-inside: avoid;
+        }
+        
+        .skill-category h4 {
+            color: #1a1a1a;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        
+        .skill-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3px;
+        }
+        
+        .skill-list li {
+            background: #ffffff;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.75em;
+            color: #374151;
+            border: 1px solid #e5e7eb;
+            display: inline-block;
+        }
+        
+        .summary {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            border-left: 3px solid #2563eb;
+            font-size: 0.95em;
+            line-height: 1.5;
+            color: #374151;
+        }
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+                color-adjust: exact !important;
+            }
+            
+            @page {
+                margin: 15mm;
+                size: A4;
+            }
+            
+            body {
+                font-size: 10pt;
+                line-height: 1.2;
+                margin: 0;
+                padding: 0;
+                max-width: none;
+                color: #1a1a1a;
+                background: white !important;
+            }
+            
+            .header {
+                margin-bottom: 8mm;
+                padding-bottom: 4mm;
+                page-break-inside: avoid;
+                border-bottom: 2pt solid #2563eb !important;
+            }
+            
+            .header::after {
+                background: #10b981 !important;
+                width: 20mm;
+                height: 2pt;
+            }
+            
+            .header h1 {
+                font-size: 18pt;
+                margin: 0 0 2mm 0;
+                color: #1a1a1a !important;
+            }
+            
+            .header h2 {
+                font-size: 12pt;
+                margin: 0 0 4mm 0;
+                color: #4b5563 !important;
+            }
+            
+            .contact-info {
+                font-size: 9pt;
+                color: #6b7280 !important;
+                gap: 8mm;
+            }
+            
+            .contact-info a {
+                color: #2563eb !important;
+            }
+            
+            .section {
+                margin-bottom: 4mm;
+                page-break-inside: auto;
+            }
+            
+            .section h3 {
+                font-size: 12pt;
+                margin-bottom: 4mm;
+                color: #1a1a1a !important;
+                padding-left: 8mm;
+                padding-bottom: 2mm;
+                border-bottom: 0.5pt solid #e5e7eb !important;
+                page-break-after: avoid;
+                orphans: 2;
+                widows: 2;
+            }
+            
+            .section h3::before {
+                background: #2563eb !important;
+                width: 2pt;
+                height: 8pt;
+            }
+            
+            .section h3::after {
+                background: #2563eb !important;
+                width: 20mm;
+                height: 1pt;
+            }
+            
+            .experience-item, .education-item, .project-item {
+                margin-bottom: 4mm;
+                padding: 3mm;
+                background: #f8f9fa !important;
+                border-left: 3pt solid #2563eb !important;
+                border-radius: 1mm;
+                page-break-inside: auto;
+                orphans: 2;
+                widows: 2;
+            }
+            
+            .job-title, .degree-title, .project-title {
+                font-size: 10pt;
+                color: #1a1a1a !important;
+                margin-bottom: 1mm;
+                page-break-after: avoid;
+            }
+            
+            .company, .school, .project-tech {
+                color: #2563eb !important;
+                font-weight: 600;
+                font-size: 9pt;
+            }
+            
+            .date {
+                font-size: 8pt;
+                color: #6b7280 !important;
+            }
+            
+            .job-details, .project-details {
+                font-size: 8pt;
+                line-height: 1.1;
+                margin-top: 2mm;
+                color: #374151 !important;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 2mm;
+                page-break-inside: auto;
+            }
+            
+            .skill-category {
+                background: #f8f9fa !important;
+                padding: 2mm;
+                border-left: 2pt solid #10b981 !important;
+                border-radius: 1mm;
+                page-break-inside: auto;
+            }
+            
+            .skill-category h4 {
+                font-size: 8pt;
+                margin-bottom: 1mm;
+                color: #1a1a1a !important;
+            }
+            
+            .skill-list li {
+                font-size: 6pt;
+                padding: 0.5mm 1mm;
+                background: #ffffff !important;
+                border: 0.5pt solid #e5e7eb !important;
+                color: #374151 !important;
+                display: inline-block;
+            }
+            
+            .summary {
+                padding: 3mm;
+                font-size: 9pt;
+                margin-bottom: 4mm;
+                background: #f8f9fa !important;
+                border-left: 3pt solid #2563eb !important;
+                border-radius: 1mm;
+                color: #374151 !important;
+                page-break-inside: auto;
+            }
+            
+            /* Prevent orphaned section titles */
+            .section h3 + * {
+                page-break-before: avoid;
+            }
+            
+            /* Ensure section titles have content following them */
+            .section {
+                page-break-inside: auto;
+                orphans: 3;
+                widows: 3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Dhia Gharsallaoui</h1>
+        <h2>Ingénieur Backend Senior - SRE</h2>
+        <div class="contact-info">
+            <a href="mailto:gharsallaoui.dhia@gmail.com">gharsallaoui.dhia@gmail.com</a> •
+            <a href="https://github.com/dhia-gharsallaoui">github.com/dhia-gharsallaoui</a> •
+            <a href="https://linkedin.com/in/gharsallaoui-dhia-eddine">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="summary">
+            Lead Backend/Devops avec 4+ années d'expérience dans la conception et la construction de systèmes distribués
+haute performance. Actuellement responsable du développement backend et l'infrastructure d'une plateforme de trading DeFi, avec une expertise
+approfondie en Golang, intégrations blockchain, et infrastructure de trading temps réel. Expérience éprouvée dans les startups
+ crypto, la construction d'APIs scalables, et l'implémentation de systèmes critiques pour les applications financières.
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Compétences Techniques</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Langages de Programmation</h4>
+                <ul class="skill-list">
+                    <li>Go (Golang)</li>
+                    <li>Python</li>
+                    <li>Solidity</li>
+                    <li>TypeScript</li>
+                    <li>Scala</li>
+                    <li>Lua</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Architecture Backend</h4>
+                <ul class="skill-list">
+                    <li>Conception Microservices</li>
+                    <li>Systèmes Event-Driven</li>
+                    <li>Domain-Driven Design</li>
+                    <li>Clean Architecture</li>
+                    <li>Patterns de Conception API</li>
+                    <li>Intégration de Systèmes</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>APIs & Protocoles</h4>
+                <ul class="skill-list">
+                    <li>REST & GraphQL</li>
+                    <li>gRPC & Protocol Buffers</li>
+                    <li>WebSocket Temps Réel</li>
+                    <li>Files de Messages</li>
+                    <li>Apache Kafka</li>
+                    <li>NATS Streaming</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Bases de Données & Stockage</h4>
+                <ul class="skill-list">
+                    <li>PostgreSQL</li>
+                    <li>TimescaleDB</li>
+                    <li>Redis Caching</li>
+                    <li>Elasticsearch</li>
+                    <li>Apache Druid</li>
+                    <li>Modélisation de Données</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>DevOps & Cloud</h4>
+                <ul class="skill-list">
+                    <li>Orchestration Kubernetes</li>
+                    <li>Containerisation Docker</li>
+                    <li>Terraform IaC</li>
+                    <li>Configuration Ansible</li>
+                    <li>ArgoCD GitOps</li>
+                    <li>Automatisation CI/CD</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>DeFi & Blockchain</h4>
+                <ul class="skill-list">
+                    <li>Protocole Ethereum</li>
+                    <li>Intégration Smart Contracts</li>
+                    <li>Ponts Cross-chain</li>
+                    <li>Systèmes de Trading DEX</li>
+                    <li>Traitement de Données On-chain</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Expérience Professionnelle</h3>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Lead Backend/DevOps</h4>
+                <div><span class="company">Perplex - Plateforme de Trading DeFi</span> • <span class="date">Avril 2025 -
+Présent</span></div>
+            </div>
+            <div class="job-details">
+                Direction de l'architecture et du développement backend pour une plateforme de trading on-chain servant les
+protocoles DeFi et les traders.
+                <br><br>
+                • Architecture et implémentation de systèmes backend de trading haute performance en Golang et Python, gérant
+les flux de prix temps réel et l'exécution d'ordres
+                <br>
+                • Conception d'architecture API scalable pour les opérations de trading DeFi, supportant plusieurs réseaux
+blockchain et intégrations DEX
+                <br>
+                • Construction de pipelines robustes d'ingestion de données on-chain traitant des millions de transactions
+quotidiennes avec des exigences de latence sub-seconde utilisant Python pour le traitement de données et Golang pour les
+services API
+                <br>
+                • Implémentation de couches d'interaction avec les smart contracts pour les stratégies de trading automatisées
+ et la fourniture de liquidité
+                <br>
+                • Établissement de patterns d'architecture système pour une infrastructure de trading haute disponibilité avec
+ des déploiements sans interruption
+                <br>
+                • Conception et implémentation de l'architecture complète de l'infrastructure à partir de zéro, incluant la
+topologie réseau, les politiques de sécurité, et les frameworks de scalabilité
+                <br>
+                • Provisionnement d'infrastructure multi-cloud utilisant Terraform sur les plateformes Digital Ocean et
+OVHCloud, assurant l'optimisation des coûts et la redondance géographique
+                <br>
+                • Déploiement et gestion de clusters Kubernetes de production avec des fonctionnalités d'orchestration
+avancées incluant l'auto-scaling, les health checks, et la gestion des ressources pour les services backend
+                <br>
+                • Intégration d'Ansible pour la gestion automatisée de configuration et déploiement de clusters Kubernetes
+avec ArgoCD pour le déploiement continu basé sur GitOps
+                <br>
+                • Collaboration avec les équipes frontend et protocole pour livrer des fonctionnalités de trading end-to-end
+et des systèmes de gestion des risques
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Lead Backend/DevOps</h4>
+                <div><span class="company">Skilld</span> • <span class="date">Août 2021 - Avril 2025</span></div>
+            </div>
+            <div class="job-details">
+                Architecture et construction de systèmes backend scalables et d'infrastructure distribuée pour les
+applications cloud-native.
+                <br><br>
+                • Conception et développement de microservices haute performance en Golang et Python utilisant les principes
+de domain-driven design, servant 10M+ requêtes quotidiennes
+                <br>
+                • Construction d'architectures event-driven utilisant Apache Kafka et NATS, traitant des flux de données temps
+ réel avec garantie de livraison de messages
+                <br>
+                • Implémentation de patterns de conception API complets avec services REST et gRPC, atteignant 99.9% de
+disponibilité sur les systèmes distribués
+                <br>
+                • Développement de pipelines de traitement de flux utilisant Apache Spark et Python pour l'analyse temps réel
+et la transformation de données
+                <br>
+                • Déploiement et gestion de multiples clusters Kubernetes de production avec des fonctionnalités avancées
+incluant les opérateurs personnalisés, contrôleurs d'entrée, intégration de service mesh, et politiques d'auto-scaling
+                <br>
+                • Établissement de stacks d'observabilité complètes avec Grafana, OpenTelemetry, Loki, et Prometheus pour la
+surveillance et l'alerte full-stack
+                <br>
+                • Implémentation de stratégies d'optimisation de base de données avec PostgreSQL et Redis, réduisant les temps
+ de réponse des requêtes de 60%
+                <br>
+                • Construction de pipelines CI/CD et automatisation d'infrastructure réduisant le temps de déploiement
+d'heures à minutes
+                <br>
+                • Développement de plugins d'inventaire Ansible personnalisés et de solutions de gestion d'état pour le
+provisionnement d'infrastructure dynamique et la gestion de configuration
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Développeur Backend Blockchain</h4>
+                <div><span class="company">ChainsAtlas</span> • <span class="date">Mars 2024 - Avril 2025</span></div>
+            </div>
+            <div class="job-details">
+                Développement de systèmes backend pour les protocoles blockchain et l'infrastructure cross-chain dans une
+startup crypto.
+                <br><br>
+                • Architecture de systèmes backend de pont multi-chaînes connectant les réseaux EVM avec XRPL, gérant les
+transferts d'actifs cross-chain
+                <br>
+                • Construction de moteurs de traitement de transactions haute performance avec mécanismes de retry et gestion
+d'erreurs complète
+                <br>
+                • Implémentation de systèmes de validation cryptographique pour les opérations multi-signature et la gestion
+sécurisée d'actifs
+                <br>
+                • Conception d'APIs blockchain-agnostiques permettant le déploiement de protocoles sur plusieurs réseaux
+                <br>
+                • Développement de systèmes de surveillance blockchain temps réel avec alertes pour les échecs de transaction
+et les problèmes réseau
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Ingénieur Logiciel Backend</h4>
+                <div><span class="company">idatase GmbH</span> • <span class="date">Janvier 2024 - Mars 2024</span></div>
+            </div>
+            <div class="job-details">
+                Construction de backends de traitement de données scalables et d'APIs pour des systèmes d'ingestion de données
+ haute volume.
+                <br><br>
+                • Développement d'APIs d'ingestion de données haut débit utilisant Python/Flask et PostgreSQL, traitant 100K+
+enregistrements par heure avec traitement par lots optimisé
+                <br>
+                • Implémentation d'architecture microservices containerisée avec déploiement Docker et Kubernetes, incluant
+l'auto-scaling de pods et l'optimisation de ressources
+                <br>
+                • Construction de systèmes de collecte de métriques temps réel et d'infrastructure d'alerte pour surveiller
+les performances du système utilisant des services de surveillance basés sur Python
+                <br>
+                • Établissement de pipelines de test et déploiement automatisés avec GitHub Actions, incluant l'automatisation
+ de tests Python et les mises à jour Kubernetes rolling
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Formation</h3>
+
+        <div class="education-item">
+            <div class="edu-header">
+                <h4 class="degree-title">Master en Informatique</h4>
+                <div><span class="school">MINES ParisTech</span> • <span class="date">2020 - 2021</span></div>
+            </div>
+            <div>Spécialisation en Systèmes Distribués et Cloud Computing • Mineure en Mathématiques</div>
+        </div>
+
+        <div class="education-item">
+            <div class="edu-header">
+                <h4 class="degree-title">Diplôme d'Ingénieur en Génie Industriel</h4>
+                <div><span class="school">ENIT</span> • <span class="date">2018 - 2021</span></div>
+            </div>
+            <div>Spécialisation en Analyse de Big Data • Mineure en Data Science</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Contributions Open Source & Projets</h3>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/mage-ai/mage-ai" style="color: #333; text-decoration:
+none;">Mage-ai - Plateforme de Pipeline de Données</a></h4>
+                <div class="project-tech">Python • Apache Druid • Systèmes d'Authentification</div>
+            </div>
+            <div class="project-details">
+                Contribution au backend d'authentification, intégration Apache Druid, et infrastructure de logging pour une
+plateforme de pipeline de données en production avec 8K+ étoiles GitHub.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/wneessen/go-mail" style="color: #333; text-decoration:
+none;">Go-mail - Bibliothèque Client Email</a></h4>
+                <div class="project-tech">Go • OpenPGP • Pattern Middleware</div>
+            </div>
+            <div class="project-details">
+                Architecture du pattern middleware et implémentation du chiffrement OpenPGP pour les communications email
+sécurisées, démontrant des patterns de conception Go avancés.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/go-rte" style="color: #333;
+text-decoration: none;">Go-RTE - SDK Client API</a></h4>
+                <div class="project-tech">Go • REST API • Bibliothèques Client</div>
+            </div>
+            <div class="project-details">
+                Construction d'un SDK Go prêt pour la production pour les APIs RTE avec gestion d'erreurs complète, limitation
+ de taux, et conception d'interface propre.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/kratos-admin-ui" style="color: #333;
+text-decoration: none;">Kratos Admin UI - Gestion d'Identité</a></h4>
+                <div class="project-tech">React • TypeScript • Ory Kratos • Systèmes d'Identité</div>
+            </div>
+            <div class="project-details">
+                Interface d'administration moderne et responsive pour le système de gestion d'identité Ory Kratos avec gestion
+ d'identité, surveillance de sessions, et tableau de bord analytique.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

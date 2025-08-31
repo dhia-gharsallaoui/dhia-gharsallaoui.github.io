@@ -74,9 +74,9 @@
         }
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin-top: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 12px;
+            margin-top: 8px;
         }
         .skill-category h4 {
             color: #0077b6;
@@ -104,14 +104,70 @@
         }
         @media print {
             body {
-                font-size: 11pt;
-                line-height: 1.4;
+                font-size: 8pt;
+                line-height: 1.1;
+                margin: 8px;
+                padding: 5px;
+                max-width: none;
+            }
+            .header {
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+                page-break-inside: avoid;
             }
             .header h1 {
-                font-size: 24pt;
+                font-size: 16pt;
+                margin: 0;
+            }
+            .header h2 {
+                font-size: 10pt;
+                margin: 1px 0 5px 0;
+            }
+            .contact-info {
+                font-size: 7pt;
+            }
+            .section {
+                margin-bottom: 8px;
+                page-break-inside: avoid;
             }
             .section h3 {
-                font-size: 14pt;
+                font-size: 10pt;
+                margin-bottom: 5px;
+            }
+            .experience-item, .education-item, .project-item {
+                margin-bottom: 6px;
+                page-break-inside: avoid;
+            }
+            .job-title, .degree-title, .project-title {
+                font-size: 8pt;
+            }
+            .job-details, .project-details {
+                font-size: 7pt;
+                line-height: 1.0;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(6, 1fr);
+                gap: 4px;
+            }
+            .skill-category h4 {
+                font-size: 7pt;
+                margin-bottom: 2px;
+            }
+            .skill-list li {
+                font-size: 6pt;
+                padding: 1px 3px;
+                margin: 0.5px 0;
+            }
+            .summary {
+                padding: 5px;
+                font-size: 7pt;
+                margin-bottom: 8px;
+            }
+            .date {
+                font-size: 6pt;
+            }
+            br {
+                line-height: 0.6;
             }
         }
     </style>
@@ -119,7 +175,7 @@
 <body>
     <div class="header">
         <h1>Dhia Gharsallaoui</h1>
-        <h2>Senior Backend Engineer - DeFi Infrastructure</h2>
+        <h2>Senior Backend Engineer - SRE</h2>
         <div class="contact-info">
             <a href="mailto:gharsallaoui.dhia@gmail.com">gharsallaoui.dhia@gmail.com</a> • 
             <a href="https://github.com/dhia-gharsallaoui">github.com/dhia-gharsallaoui</a> • 
@@ -129,7 +185,7 @@
 
     <div class="section">
         <div class="summary">
-            Senior Backend Engineer with 4+ years of experience architecting and building high-performance distributed systems. Currently leading backend development at a DeFi trading platform, with deep expertise in Golang, blockchain integrations, and real-time trading infrastructure. Proven track record in crypto startups, building scalable APIs, and implementing mission-critical systems for financial applications.
+            Senior Backend Engineer with 5+ years of experience architecting and building high-performance distributed systems. Currently leading backend development at a DeFi trading platform, with deep expertise in Golang, blockchain integrations, and real-time infrastructure. Proven track record in crypto startups and energy sector, building scalable APIs, and implementing mission-critical systems for financial and energy applications.
         </div>
     </div>
 
@@ -139,34 +195,56 @@
             <div class="skill-category">
                 <h4>Programming Languages</h4>
                 <ul class="skill-list">
-                    <li>Go (Golang) - Expert</li>
-                    <li>Python - Production</li>
-                    <li>Rust - Familiar</li>
-                    <li>Solidity - Blockchain</li>
+                    <li>Go (Golang)</li>
+                    <li>Python</li>
+                    <li>Solidity</li>
                     <li>TypeScript</li>
                     <li>Scala</li>
+                    <li>Lua</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h4>Backend & APIs</h4>
+                <h4>Backend Architecture</h4>
                 <ul class="skill-list">
-                    <li>REST & GraphQL APIs</li>
+                    <li>Microservices Design</li>
+                    <li>Event-Driven Systems</li>
+                    <li>Domain-Driven Design</li>
+                    <li>Clean Architecture</li>
+                    <li>API Design Patterns</li>
+                    <li>System Integration</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>APIs & Protocols</h4>
+                <ul class="skill-list">
+                    <li>REST & GraphQL</li>
                     <li>gRPC & Protocol Buffers</li>
                     <li>WebSocket Real-time</li>
-                    <li>Microservices Architecture</li>
-                    <li>Event-Driven Systems</li>
                     <li>Message Queues</li>
+                    <li>Apache Kafka</li>
+                    <li>NATS Streaming</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h4>Distributed Systems</h4>
+                <h4>Databases & Storage</h4>
                 <ul class="skill-list">
-                    <li>Apache Kafka</li>
-                    <li>Redis</li>
                     <li>PostgreSQL</li>
                     <li>TimescaleDB</li>
+                    <li>Redis Caching</li>
                     <li>Elasticsearch</li>
-                    <li>Load Balancing</li>
+                    <li>Apache Druid</li>
+                    <li>Data Modeling</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>DevOps & Cloud</h4>
+                <ul class="skill-list">
+                    <li>Kubernetes Orchestration</li>
+                    <li>Docker Containerization</li>
+                    <li>Terraform IaC</li>
+                    <li>Ansible Configuration</li>
+                    <li>ArgoCD GitOps</li>
+                    <li>CI/CD Automation</li>
                 </ul>
             </div>
             <div class="skill-category">
@@ -174,10 +252,10 @@
                 <ul class="skill-list">
                     <li>Ethereum Protocol</li>
                     <li>Smart Contract Integration</li>
-                    <li>DEX Trading</li>
                     <li>Cross-chain Bridges</li>
-                    <li>XRPL Integration</li>
+                    <li>DEX Trading Systems</li>
                     <li>On-chain Data Processing</li>
+                    <li>Multi-signature Wallets</li>
                 </ul>
             </div>
         </div>
@@ -194,15 +272,23 @@
             <div class="job-details">
                 Leading backend architecture and development for an on-chain trading platform serving DeFi protocols and traders.
                 <br><br>
-                • Architecting and implementing high-performance trading backend systems in Golang, handling real-time price feeds and order execution
+                • Architecting and implementing high-performance trading backend systems in Golang and Python, handling real-time price feeds and order execution
                 <br>
                 • Designing scalable API architecture for DeFi trading operations, supporting multiple blockchain networks and DEX integrations
                 <br>
-                • Building robust on-chain data ingestion pipelines processing millions of transactions daily with sub-second latency requirements
+                • Building robust on-chain data ingestion pipelines processing millions of transactions daily with sub-second latency requirements using Python for data processing and Golang for API services
                 <br>
                 • Implementing smart contract interaction layers for automated trading strategies and liquidity provision
                 <br>
                 • Establishing system architecture patterns for high-availability trading infrastructure with zero-downtime deployments
+                <br>
+                • Designed and implemented complete infrastructure architecture from scratch, including network topology, security policies, and scalability frameworks
+                <br>
+                • Provisioned multi-cloud infrastructure using Terraform across Digital Ocean and OVHCloud platforms, ensuring cost optimization and geographic redundancy
+                <br>
+                • Deployed and managed production Kubernetes clusters with advanced orchestration features including auto-scaling, health checks, and resource management for backend services
+                <br>
+                • Integrated Ansible for automated configuration management and deployed Kubernetes clusters with ArgoCD for GitOps-based continuous deployment
                 <br>
                 • Collaborating with frontend and protocol teams to deliver end-to-end trading features and risk management systems
             </div>
@@ -211,24 +297,30 @@
         <div class="experience-item">
             <div class="job-header">
                 <h4 class="job-title">Backend Solution Architect</h4>
-                <div><span class="company">Skilld</span> • <span class="date">February 2022 - April 2025</span></div>
+                <div><span class="company">Skilld</span> • <span class="date">August 2021 - April 2025</span></div>
             </div>
             <div class="job-details">
                 Architected and built scalable backend systems and distributed infrastructure for cloud-native applications.
                 <br><br>
-                • Designed and developed high-performance microservices in Golang using domain-driven design principles, serving 10M+ requests daily
+                • Designed and developed high-performance microservices in Golang and Python using domain-driven design principles, serving 10M+ requests daily
+                <br>
+                • Led the development of the ze-energy platform, a comprehensive energy management system enabling control of photovoltaic and battery assets with full integration to energy ecosystem including RTE, Regelleistung, and Alpiq.
                 <br>
                 • Built event-driven architectures using Apache Kafka and NATS, processing real-time data streams with guaranteed message delivery
                 <br>
                 • Implemented comprehensive API design patterns with REST and gRPC services, achieving 99.9% uptime across distributed systems
                 <br>
-                • Developed stream processing pipelines using Apache Spark for real-time analytics and data transformation
+                • Developed stream processing pipelines using Apache Spark and Python for real-time analytics and data transformation
                 <br>
-                • Established monitoring and observability systems with Prometheus, Grafana, and distributed tracing for production debugging
+                • Deployed and managed multiple production Kubernetes clusters with advanced features including custom operators, ingress controllers, service mesh integration, and automated scaling policies
+                <br>
+                • Established comprehensive observability stacks with Grafana, OpenTelemetry, Loki, and Prometheus for full-stack monitoring and alerting
                 <br>
                 • Implemented database optimization strategies with PostgreSQL and Redis, reducing query response times by 60%
                 <br>
                 • Built CI/CD pipelines and infrastructure automation reducing deployment time from hours to minutes
+                <br>
+                • Developed custom Ansible inventory plugins and state management solutions for dynamic infrastructure provisioning and configuration management
             </div>
         </div>
 
@@ -260,13 +352,13 @@
             <div class="job-details">
                 Built scalable data processing backends and APIs for high-volume data ingestion systems.
                 <br><br>
-                • Developed high-throughput data ingestion APIs using Python/Flask and PostgreSQL, processing 100K+ records hourly
+                • Developed high-throughput data ingestion APIs using Python/Flask and PostgreSQL, processing 100K+ records hourly with optimized batch processing
                 <br>
-                • Implemented containerized microservices architecture with Docker and Kubernetes deployment
+                • Implemented containerized microservices architecture with Docker and Kubernetes deployment, including pod auto-scaling and resource optimization
                 <br>
-                • Built real-time metrics collection systems and alerting infrastructure for monitoring system performance
+                • Built real-time metrics collection systems and alerting infrastructure for monitoring system performance using Python-based monitoring services
                 <br>
-                • Established automated testing and deployment pipelines with GitHub Actions
+                • Established automated testing and deployment pipelines with GitHub Actions, including Python test automation and Kubernetes rolling updates
             </div>
         </div>
     </div>
@@ -296,17 +388,27 @@
 
         <div class="project-item">
             <div class="project-header">
-                <h4 class="project-title">Mage-ai - Data Pipeline Platform</h4>
-                <div class="project-tech">Python • Apache Druid • Authentication Systems</div>
+                <h4 class="project-title"><a href="https://github.com/grafadruid/go-druid" style="color: #333; text-decoration: none;">Go-Druid - Apache Druid Client Library</a></h4>
+                <div class="project-tech">Go • Apache Druid • Query Engine • Maintainer</div>
             </div>
             <div class="project-details">
-                Contributed authentication backend, Apache Druid integration, and logging infrastructure to production data pipeline platform with 15K+ GitHub stars.
+                Maintainer of production-ready Go client library for Apache Druid, providing comprehensive query capabilities and connection management for real-time analytics applications.
             </div>
         </div>
 
         <div class="project-item">
             <div class="project-header">
-                <h4 class="project-title">Go-mail - Email Client Library</h4>
+                <h4 class="project-title"><a href="https://github.com/mage-ai/mage-ai" style="color: #333; text-decoration: none;">Mage-ai - Data Pipeline Platform</a></h4>
+                <div class="project-tech">Python • Apache Druid • Authentication Systems</div>
+            </div>
+            <div class="project-details">
+                Contributed authentication backend, Apache Druid integration, and logging infrastructure to production data pipeline platform with 8K+ GitHub stars.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/wneessen/go-mail" style="color: #333; text-decoration: none;">Go-mail - Email Client Library</a></h4>
                 <div class="project-tech">Go • OpenPGP • Middleware Pattern</div>
             </div>
             <div class="project-details">
@@ -316,11 +418,21 @@
 
         <div class="project-item">
             <div class="project-header">
-                <h4 class="project-title">Go-RTE - API Client SDK</h4>
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/go-rte" style="color: #333; text-decoration: none;">Go-RTE - API Client SDK</a></h4>
                 <div class="project-tech">Go • REST API • Client Libraries</div>
             </div>
             <div class="project-details">
                 Built production-ready Go SDK for RTE APIs with comprehensive error handling, rate limiting, and clean interface design.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/kratos-admin-ui" style="color: #333; text-decoration: none;">Kratos Admin UI - Identity Management</a></h4>
+                <div class="project-tech">React • TypeScript • Ory Kratos • Identity Systems</div>
+            </div>
+            <div class="project-details">
+                Modern, responsive admin interface for Ory Kratos identity management system with identity management, session monitoring, and analytics dashboard.
             </div>
         </div>
     </div>

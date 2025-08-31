@@ -211,7 +211,6 @@ params:
           - Developed real-time blockchain monitoring systems with alerting for transaction failures and network issues
           - Contributed to RWAFi protocol development, building smart contracts in Solidity for institutional-grade real-world asset infrastructure that bridges DeFi liquidity with traditional finance security
           - Worked on blockchain wallet extension development, adding EVM-based blockchain support to enhance multi-chain wallet functionality and cross-chain asset management
-          - Contributed to building a prototype of an agentic blockchain from scratch, implementing autonomous agent consensus mechanisms and smart contract execution for AI-driven blockchain operations
 
       - job: "Software Engineer"
         company: "idatase GmbH"

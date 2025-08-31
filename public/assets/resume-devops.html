@@ -3,249 +3,467 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhia Eddine Gharsallaoui - DevOps & Platform Architect</title>
+    <title>Dhia Gharsallaoui - Lead DevOps/SRE Engineer - Backend</title>
     <style>
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            max-width: 1200px;
+            color: #333;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 2rem;
-            color: #2d3748;
+            padding: 20px;
+            background: #fff;
         }
-        
         .header {
             text-align: center;
-            margin-bottom: 2rem;
+            border-bottom: 2px solid #0077b6;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
         }
-        
-        .name {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            color: #1a202c;
-        }
-        
-        .title {
-            font-size: 1.3rem;
-            color: #4299e1;
-            margin-bottom: 1rem;
-            font-weight: 600;
-        }
-        
-        .contact-info {
-            margin-bottom: 1rem;
-            font-size: 0.95rem;
-            color: #4a5568;
-        }
-        
-        .section {
-            margin-bottom: 2rem;
-        }
-        
-        .section-title {
-            font-size: 1.25rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            border-bottom: 2px solid #4a5568;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            color: #2d3748;
-        }
-        
-        .experience-item {
-            margin-bottom: 1.5rem;
-        }
-        
-        .job-title {
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 0.25rem;
-            color: #1a202c;
-        }
-        
-        .company-info {
-            font-style: italic;
-            color: #4a5568;
-            margin-bottom: 0.5rem;
-        }
-        
-        ul {
+        .header h1 {
             margin: 0;
-            padding-left: 1.5rem;
+            font-size: 2.5em;
+            color: #0077b6;
         }
-        
-        li {
-            margin-bottom: 0.5rem;
+        .header h2 {
+            margin: 5px 0 15px 0;
+            font-size: 1.3em;
+            color: #666;
+            font-weight: normal;
         }
-        
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
+        .contact-info {
+            font-size: 0.9em;
+            color: #666;
         }
-        
-        .skill-category {
-            margin-bottom: 1rem;
-        }
-        
-        .skill-title {
-            font-weight: bold;
-            color: #1a202c;
-            margin-bottom: 0.25rem;
-        }
-        
-        .project-item {
-            margin-bottom: 1rem;
-        }
-        
-        .project-title {
-            font-weight: bold;
-            color: #1a202c;
-        }
-        
-        .project-link {
-            color: #4299e1;
+        .contact-info a {
+            color: #0077b6;
             text-decoration: none;
         }
-        
-        .project-link:hover {
-            text-decoration: underline;
+        .section {
+            margin-bottom: 30px;
         }
-        
-        .highlight {
-            background-color: #edf2f7;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            font-weight: 600;
+        .section h3 {
+            color: #0077b6;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 25px;
+        }
+        .job-header, .edu-header, .project-header {
+            margin-bottom: 8px;
+        }
+        .job-title, .degree-title, .project-title {
+            font-size: 1.1em;
+            color: #333;
+            margin: 0;
+        }
+        .company, .school, .project-tech {
+            color: #0077b6;
+            font-weight: 500;
+        }
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+        .job-details, .project-details {
+            margin-top: 8px;
+            line-height: 1.5;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .skill-category h4 {
+            color: #0077b6;
+            margin: 0 0 8px 0;
+            font-size: 1em;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .skill-list li {
+            background: #f8fafc;
+            padding: 4px 8px;
+            margin: 2px 0;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+        .summary {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 25px;
+            font-style: italic;
+        }
+        @media print {
+            body {
+                font-size: 8pt;
+                line-height: 1.1;
+                margin: 8px;
+                padding: 8px;
+                max-width: none;
+            }
+            .header {
+                margin-bottom: 10px;
+                padding-bottom: 8px;
+                page-break-inside: avoid;
+            }
+            .header h1 {
+                font-size: 16pt;
+                margin: 0;
+            }
+            .header h2 {
+                font-size: 10pt;
+                margin: 2px 0 6px 0;
+            }
+            .contact-info {
+                font-size: 7pt;
+            }
+            .section {
+                margin-bottom: 8px;
+                break-inside: avoid;
+            }
+            .section h3 {
+                font-size: 10pt;
+                margin-bottom: 6px;
+                padding-bottom: 3px;
+            }
+            .experience-item, .education-item, .project-item {
+                margin-bottom: 6px;
+                break-inside: avoid;
+            }
+            .job-title, .degree-title, .project-title {
+                font-size: 8pt;
+                font-weight: bold;
+            }
+            .job-details, .project-details {
+                font-size: 7pt;
+                line-height: 1.0;
+                margin-top: 4px;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 6px;
+                margin-top: 6px;
+            }
+            .skill-category h4 {
+                font-size: 7pt;
+                margin-bottom: 3px;
+                font-weight: bold;
+            }
+            .skill-list li {
+                font-size: 6pt;
+                padding: 1px 3px;
+                margin: 1px 0;
+            }
+            .summary {
+                padding: 6px;
+                font-size: 7pt;
+                margin-bottom: 8px;
+                line-height: 1.0;
+            }
+            .date {
+                font-size: 6pt;
+            }
+            .company, .school {
+                font-size: 7pt;
+            }
+            br {
+                line-height: 0.6;
+            }
+            .job-header, .edu-header, .project-header {
+                margin-bottom: 4px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <div class="name">Dhia Eddine Gharsallaoui</div>
-        <div class="title">DevOps & Platform Architect</div>
+        <h1>Dhia Gharsallaoui</h1>
+        <h2>Lead DevOps/SRE Engineer - Backend</h2>
         <div class="contact-info">
-            Paris, Ile-de-France, France | gharsallaoui.dhia@gmail.com | 07 58 77 03 14 | 
-            <a href="https://www.linkedin.com/in/gharsallaoui-dhia-eddine/" class="project-link">LinkedIn</a> | 
-            <a href="https://dhia-gharsallaoui.github.io" class="project-link">Portfolio</a>
+            <a href="mailto:gharsallaoui.dhia@gmail.com">gharsallaoui.dhia@gmail.com</a> • 
+            <a href="https://github.com/dhia-gharsallaoui">github.com/dhia-gharsallaoui</a> • 
+            <a href="https://linkedin.com/in/gharsallaoui-dhia-eddine">LinkedIn</a>
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Summary</div>
-        <p>Senior DevOps & Platform Architect with <span class="highlight">3+ years</span> of experience designing and implementing cloud-native infrastructure solutions. Expert in <span class="highlight">Kubernetes orchestration</span>, <span class="highlight">Infrastructure as Code</span>, and <span class="highlight">CI/CD automation</span>. Proven track record of building scalable, observable, and secure distributed systems using modern DevOps practices. Specialized in multi-cloud deployments, infrastructure automation, and comprehensive monitoring solutions.</p>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Experience</div>
-        
-        <div class="experience-item">
-            <div class="job-title">Solution Architect (DevOps Focus)</div>
-            <div class="company-info">Skilld | February 2022 - Present | Paris, France</div>
-            <ul>
-                <li>Designed and maintained <span class="highlight">multi-cluster Kubernetes</span> infrastructure serving 50+ microservices with 99.9% uptime</li>
-                <li>Provisioned and managed cloud infrastructure using <span class="highlight">Terraform on Digital Ocean and OVH</span>, reducing deployment time by 70%</li>
-                <li>Implemented comprehensive <span class="highlight">Infrastructure as Code</span> using Ansible and Terraform, managing 100+ servers with zero-downtime deployments</li>
-                <li>Built enterprise-grade <span class="highlight">observability stack</span> using Prometheus, Grafana, and OpenTelemetry, achieving sub-second monitoring across all services</li>
-                <li>Implemented <span class="highlight">GitOps workflows</span> using ArgoCD for automated application deployments with rollback capabilities</li>
-                <li>Developed and maintained <span class="highlight">GitLab CI/CD pipelines</span> with automated testing, security scanning, and progressive deployments</li>
-                <li>Architected <span class="highlight">centralized logging</span> using Graylog and Elasticsearch, processing 1M+ logs daily with custom alerting</li>
-                <li>Implemented <span class="highlight">PKI infrastructure</span> with automated certificate management and renewal, ensuring zero certificate-related outages</li>
-                <li>Designed <span class="highlight">event-driven architecture</span> using Apache Kafka and NATS, enabling real-time processing with auto-scaling capabilities</li>
-                <li>Built <span class="highlight">enterprise SSO</span> using Ory ecosystem with multi-provider authentication and fine-grained RBAC</li>
-                <li>Optimized container orchestration with <span class="highlight">Helm charts</span> and custom operators, reducing resource usage by 40%</li>
-            </ul>
-        </div>
-
-        <div class="experience-item">
-            <div class="job-title">Freelance Software Engineer (Infrastructure)</div>
-            <div class="company-info">idatase GmbH | January 2024 - March 2024 | Remote</div>
-            <ul>
-                <li>Implemented <span class="highlight">containerized microservices</span> using Docker Compose and Kubernetes with automated deployment pipelines</li>
-                <li>Designed <span class="highlight">real-time monitoring</span> system with custom metrics collection and alerting rules</li>
-                <li>Built scalable data ingestion pipeline with comprehensive error handling and recovery mechanisms</li>
-            </ul>
+        <div class="summary">
+            Lead DevOps/SRE Engineer and Backend specialist with 5+ years of experience architecting scalable distributed systems and cloud-native infrastructure. Expert in Kubernetes orchestration, multi-cloud deployments, and observability stacks. Currently leading backend development and infrastructure at a DeFi trading platform, with proven expertise in building mission-critical systems from scratch using Terraform, Ansible, and GitOps practices.
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">DevOps & Infrastructure Skills</div>
+        <h3>Technical Skills</h3>
         <div class="skills-grid">
             <div class="skill-category">
-                <div class="skill-title">Container Orchestration</div>
-                Kubernetes, Docker, Helm, Multi-cluster Management, Custom Operators, Resource Optimization
+                <h4>DevOps & Infrastructure</h4>
+                <ul class="skill-list">
+                    <li>Kubernetes Orchestration</li>
+                    <li>Terraform IaC</li>
+                    <li>Ansible Configuration</li>
+                    <li>ArgoCD GitOps</li>
+                    <li>Docker Containerization</li>
+                    <li>Multi-Cloud Architecture</li>
+                    <li>Digital Ocean & OVHCloud</li>
+                    <li>Infrastructure Design</li>
+                </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-title">Infrastructure as Code</div>
-                Terraform, Ansible, GitOps, Infrastructure Automation, Configuration Management
+                <h4>Monitoring & Observability</h4>
+                <ul class="skill-list">
+                    <li>Prometheus & Grafana</li>
+                    <li>OpenTelemetry</li>
+                    <li>Loki Log Aggregation</li>
+                    <li>Distributed Tracing</li>
+                    <li>Alerting & Incident Response</li>
+                    <li>Performance Monitoring</li>
+                    <li>SLI/SLO Implementation</li>
+                    <li>System Health Dashboards</li>
+                </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-title">Cloud Platforms</div>
-                Digital Ocean, OVH, Multi-cloud Architecture, Cloud Migration, Cost Optimization
+                <h4>Programming Languages</h4>
+                <ul class="skill-list">
+                    <li>Go (Golang) - Expert</li>
+                    <li>Python - Production</li>
+                    <li>Bash/Shell Scripting</li>
+                    <li>YAML/JSON</li>
+                    <li>Solidity - Blockchain</li>
+                    <li>TypeScript</li>
+                    <li>Scala</li>
+                    <li>Rust</li>
+                </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-title">CI/CD & GitOps</div>
-                GitLab CI, ArgoCD, GitOps, Automated Testing, Progressive Deployments, Pipeline Optimization, Release Management
+                <h4>Backend Architecture</h4>
+                <ul class="skill-list">
+                    <li>Microservices Design</li>
+                    <li>Event-Driven Systems</li>
+                    <li>Domain-Driven Design</li>
+                    <li>API Design Patterns</li>
+                    <li>System Integration</li>
+                    <li>High Availability Design</li>
+                </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-title">Observability & Monitoring</div>
-                Prometheus, Grafana, OpenTelemetry, Elasticsearch, Graylog, Jaeger, AlertManager, Custom Dashboards
+                <h4>CI/CD & Automation</h4>
+                <ul class="skill-list">
+                    <li>GitHub Actions</li>
+                    <li>GitLab CI/CD</li>
+                    <li>Jenkins Pipelines</li>
+                    <li>Automated Testing</li>
+                    <li>Deployment Automation</li>
+                    <li>Configuration Management</li>
+                </ul>
             </div>
             <div class="skill-category">
-                <div class="skill-title">Security & Compliance</div>
-                PKI Management, Certificate Automation, OAuth2/OIDC, RBAC, Security Scanning, Compliance Monitoring
-            </div>
-            <div class="skill-category">
-                <div class="skill-title">Data & Messaging</div>
-                Apache Kafka, NATS, Redis, Event-driven Architecture, Stream Processing, Message Queuing
-            </div>
-            <div class="skill-category">
-                <div class="skill-title">Programming & Scripting</div>
-                Go (Golang), Python, Bash, Infrastructure Scripting, Automation Tools, Configuration Management
+                <h4>Databases & Storage</h4>
+                <ul class="skill-list">
+                    <li>PostgreSQL</li>
+                    <li>TimescaleDB</li>
+                    <li>Redis Caching</li>
+                    <li>Elasticsearch</li>
+                    <li>Apache Druid</li>
+                    <li>Data Modeling</li>
+                </ul>
             </div>
         </div>
     </div>
 
     <div class="section">
-        <div class="section-title">Key Achievements</div>
-        <ul>
-            <li><span class="highlight">99.9% uptime</span> achieved across multi-cluster Kubernetes infrastructure</li>
-            <li><span class="highlight">70% reduction</span> in deployment time through Infrastructure as Code implementation</li>
-            <li><span class="highlight">40% resource optimization</span> through container orchestration improvements</li>
-            <li><span class="highlight">Zero certificate outages</span> through automated PKI management</li>
-            <li><span class="highlight">1M+ daily logs</span> processed through centralized logging architecture</li>
-            <li><span class="highlight">Sub-second monitoring</span> across all distributed services</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Open Source Contributions (Infrastructure Focus)</div>
-        <div class="project-item">
-            <span class="project-title">Mage-ai</span> - 
-            <a href="https://github.com/mage-ai/mage-ai" class="project-link">Open Source</a>
-            <br>
-            Implemented enterprise LDAP authentication and centralized logging system, enhancing security and observability for data pipeline infrastructure.
-        </div>
-        <div class="project-item">
-            <span class="project-title">Go-mail</span> - 
-            <a href="https://github.com/wneessen/go-mail/" class="project-link">Open Source</a>
-            <br>
-            Developed middleware architecture patterns and security enhancements, improving system reliability and security posture.
-        </div>
-    </div>
-
-    <div class="section">
-        <div class="section-title">Education</div>
+        <h3>Professional Experience</h3>
+        
         <div class="experience-item">
-            <div class="job-title">Master's Degree in Computer Science</div>
-            <div class="company-info">MINES ParisTech | 2020 - 2021</div>
-            <div class="company-info">Focus on Distributed Systems and Cloud Computing</div>
+            <div class="job-header">
+                <h4 class="job-title">Lead Backend/DevOps Engineer</h4>
+                <div><span class="company">Perplex - DeFi Trading Platform</span> • <span class="date">April 2025 - Present</span></div>
+            </div>
+            <div class="job-details">
+                Leading backend architecture and infrastructure operations for an on-chain trading platform serving DeFi protocols and traders.
+                <br><br>
+                • Designed and implemented complete infrastructure architecture from scratch, including network topology, security policies, and scalability frameworks
+                <br>
+                • Provisioned multi-cloud infrastructure using Terraform across Digital Ocean and OVHCloud platforms, ensuring cost optimization and geographic redundancy
+                <br>
+                • Integrated Ansible for automated configuration management and deployed Kubernetes clusters with ArgoCD for GitOps-based continuous deployment
+                <br>
+                • Architecting and implementing high-performance trading backend systems in Golang, handling real-time price feeds and order execution
+                <br>
+                • Building robust on-chain data ingestion pipelines processing millions of transactions daily with sub-second latency requirements
+                <br>
+                • Establishing system architecture patterns for high-availability trading infrastructure with zero-downtime deployments
+                <br>
+                • Implementing comprehensive monitoring and alerting systems for trading operations and infrastructure health
+            </div>
         </div>
+
         <div class="experience-item">
-            <div class="job-title">Engineer's Degree in Industrial Engineering</div>
-            <div class="company-info">ENIT | 2018 - 2021</div>
-            <div class="company-info">Specialization in Big Data Analytics and System Architecture</div>
+            <div class="job-header">
+                <h4 class="job-title">Solution Architect</h4>
+                <div><span class="company">Skilld</span> • <span class="date">August 2021 - April 2025</span></div>
+            </div>
+            <div class="job-details">
+                Architected enterprise-grade scalable systems and cloud-native infrastructure solutions for high-performance distributed applications.
+                <br><br>
+                • Architected and implemented multi-cluster Kubernetes infrastructure with comprehensive observability stack using Prometheus, Grafana, and OpenTelemetry, achieving end-to-end visibility and sub-second monitoring capabilities
+                <br>
+                • Designed and developed high-performance microservices in Golang using domain-driven design principles and clean architecture patterns, serving 10M+ requests daily
+                <br>
+                • Built scalable event-driven architecture using Apache Kafka, NATS, and Redis, enabling real-time event processing with sub-second latency and automated scaling capabilities
+                <br>
+                • Engineered high-performance data processing pipelines using Apache Spark and Delta Lake, implementing comprehensive data quality checks and real-time analytics with Apache Druid integration
+                <br>
+                • Designed and implemented enterprise-wide SSO using Ory ecosystem (Kratos, Hydra, Oathkeeper), supporting multiple authentication providers (Google, GitHub, GitLab, LinkedIn) and fine-grained RBAC
+                <br>
+                • Developed and maintained infrastructure automation on bare metal servers using Ansible, implementing GitLab CI pipelines for continuous deployment and testing
+                <br>
+                • Created and optimized centralized logging architecture using Graylog and Elasticsearch, implementing custom parsing rules and alerting mechanisms
+                <br>
+                • Designed and implemented PKI infrastructure with automated certificate management and renewal systems, ensuring secure communication across distributed services
+                <br>
+                • Integrated Hive Metastore and implemented comprehensive data catalog management, improving data discovery and governance for enterprise data workflows
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Blockchain Backend Developer</h4>
+                <div><span class="company">ChainsAtlas</span> • <span class="date">March 2024 - April 2025</span></div>
+            </div>
+            <div class="job-details">
+                Developed backend systems for blockchain protocols and cross-chain infrastructure at a crypto startup.
+                <br><br>
+                • Architected multi-chain bridge backend systems connecting EVM networks with XRPL, handling cross-chain asset transfers
+                <br>
+                • Built high-performance transaction processing engines with retry mechanisms and comprehensive error handling
+                <br>
+                • Implemented cryptographic validation systems for multi-signature operations and secure asset management
+                <br>
+                • Designed blockchain-agnostic APIs enabling protocol deployment across multiple networks
+                <br>
+                • Developed real-time blockchain monitoring systems with alerting for transaction failures and network issues
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Backend Software Engineer</h4>
+                <div><span class="company">idatase GmbH</span> • <span class="date">January 2024 - March 2024</span></div>
+            </div>
+            <div class="job-details">
+                Built scalable data processing backends and containerized infrastructure for high-volume data systems.
+                <br><br>
+                • Developed high-throughput data ingestion APIs using Python/Flask and PostgreSQL, processing 100K+ records hourly
+                <br>
+                • Implemented containerized microservices architecture with Docker and Kubernetes deployment
+                <br>
+                • Built real-time metrics collection systems and alerting infrastructure for monitoring system performance
+                <br>
+                • Established automated testing and deployment pipelines with GitHub Actions
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Education</h3>
+        
+        <div class="education-item">
+            <div class="edu-header">
+                <h4 class="degree-title">Master's Degree in Computer Science</h4>
+                <div><span class="school">MINES ParisTech</span> • <span class="date">2020 - 2021</span></div>
+            </div>
+            <div>Focus on Distributed Systems and Cloud Computing • Minor in Mathematics</div>
+        </div>
+
+        <div class="education-item">
+            <div class="edu-header">
+                <h4 class="degree-title">Engineer's Degree in Industrial Engineering</h4>
+                <div><span class="school">ENIT</span> • <span class="date">2018 - 2021</span></div>
+            </div>
+            <div>Specialization in Big Data Analytics • Minor in Data Science</div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>Open Source Contributions & Projects</h3>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/kratos-admin-ui" style="color: #333; text-decoration: none;">Kratos Admin UI - Identity Management</a> <em>(Creator)</em></h4>
+                <div class="project-tech">React • TypeScript • Ory Kratos • Identity Systems</div>
+            </div>
+            <div class="project-details">
+                Modern, responsive admin interface for Ory Kratos identity management system with identity management, session monitoring, and analytics dashboard.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/authguard" style="color: #333; text-decoration: none;">AuthGuard</a> <em>(Creator)</em></h4>
+                <div class="project-tech">Go • Nginx • Authentication • Caching • Monitoring</div>
+            </div>
+            <div class="project-details">
+                Lightweight, high-performance authentication service designed for nginx's auth_request module. Provides composable authentication with pluggable providers, built-in caching, and comprehensive monitoring.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/go-rte" style="color: #333; text-decoration: none;">Go-RTE - API Client SDK</a> <em>(Creator)</em></h4>
+                <div class="project-tech">Go • REST API • Client Libraries</div>
+            </div>
+            <div class="project-details">
+                Built production-ready Go SDK for RTE APIs with comprehensive error handling, rate limiting, and clean interface design.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/druid-grafana-plugin" style="color: #333; text-decoration: none;">Druid-Grafana Plugin</a> <em>(Maintainer)</em></h4>
+                <div class="project-tech">JavaScript • Grafana • Apache Druid • Data Visualization</div>
+            </div>
+            <div class="project-details">
+                Grafana plugin that enables Druid as a data source. Since Grafana doesn't support Druid natively, this plugin bridges the gap to provide seamless data visualization and querying capabilities.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/dhia-gharsallaoui/go-druid" style="color: #333; text-decoration: none;">Go-Druid Client</a> <em>(Maintainer)</em></h4>
+                <div class="project-tech">Go • Apache Druid • Query API • REST Client</div>
+            </div>
+            <div class="project-details">
+                Production-ready Golang client for Apache Druid supporting both Query API and Common API. Provides comprehensive functionality for interacting with Druid clusters.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/mage-ai/mage-ai" style="color: #333; text-decoration: none;">Mage-ai - Data Pipeline Platform</a> <em>(Contributor)</em></h4>
+                <div class="project-tech">Python • Apache Druid • Authentication Systems</div>
+            </div>
+            <div class="project-details">
+                Contributed authentication backend, Apache Druid integration, and logging infrastructure to production data pipeline platform with 8K+ GitHub stars.
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <h4 class="project-title"><a href="https://github.com/wneessen/go-mail" style="color: #333; text-decoration: none;">Go-mail - Email Client Library</a> <em>(Contributor)</em></h4>
+                <div class="project-tech">Go • OpenPGP • Middleware Pattern</div>
+            </div>
+            <div class="project-details">
+                Architected middleware pattern and implemented OpenPGP encryption for secure email communications, demonstrating advanced Go design patterns.
+            </div>
         </div>
     </div>
 </body>
