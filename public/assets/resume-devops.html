@@ -74,7 +74,7 @@
         }
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 15px;
             margin-top: 10px;
         }
@@ -104,82 +104,86 @@
         }
         @media print {
             body {
-                font-size: 8pt;
-                line-height: 1.1;
-                margin: 8px;
-                padding: 8px;
+                font-size: 10pt;
+                line-height: 1.3;
+                margin: 15px;
+                padding: 10px;
                 max-width: none;
             }
             .header {
-                margin-bottom: 10px;
-                padding-bottom: 8px;
+                margin-bottom: 15px;
+                padding-bottom: 10px;
                 page-break-inside: avoid;
             }
             .header h1 {
-                font-size: 16pt;
+                font-size: 20pt;
                 margin: 0;
             }
             .header h2 {
-                font-size: 10pt;
-                margin: 2px 0 6px 0;
+                font-size: 12pt;
+                margin: 3px 0 8px 0;
             }
             .contact-info {
-                font-size: 7pt;
+                font-size: 9pt;
             }
             .section {
                 margin-bottom: 8px;
-                break-inside: avoid;
+                break-inside: auto;
             }
             .section h3 {
-                font-size: 10pt;
-                margin-bottom: 6px;
-                padding-bottom: 3px;
+                font-size: 13pt;
+                margin-bottom: 8px;
+                padding-bottom: 4px;
             }
             .experience-item, .education-item, .project-item {
-                margin-bottom: 6px;
-                break-inside: avoid;
+                margin-bottom: 10px;
+                page-break-inside: auto;
+            }
+            .experience-item:first-of-type {
+                page-break-before: avoid;
+            }
+            .job-header, .edu-header, .project-header {
+                margin-bottom: 5px;
+                page-break-after: avoid;
             }
             .job-title, .degree-title, .project-title {
-                font-size: 8pt;
+                font-size: 10pt;
                 font-weight: bold;
             }
             .job-details, .project-details {
-                font-size: 7pt;
-                line-height: 1.0;
-                margin-top: 4px;
+                font-size: 9pt;
+                line-height: 1.2;
+                margin-top: 5px;
             }
             .skills-grid {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(4, 1fr);
                 gap: 6px;
                 margin-top: 6px;
             }
             .skill-category h4 {
-                font-size: 7pt;
-                margin-bottom: 3px;
+                font-size: 9pt;
+                margin-bottom: 4px;
                 font-weight: bold;
             }
             .skill-list li {
-                font-size: 6pt;
-                padding: 1px 3px;
-                margin: 1px 0;
+                font-size: 8pt;
+                padding: 2px 4px;
+                margin: 2px 0;
             }
             .summary {
-                padding: 6px;
-                font-size: 7pt;
+                padding: 8px;
+                font-size: 9pt;
                 margin-bottom: 8px;
-                line-height: 1.0;
+                line-height: 1.2;
             }
             .date {
-                font-size: 6pt;
+                font-size: 8pt;
             }
             .company, .school {
-                font-size: 7pt;
+                font-size: 9pt;
             }
             br {
-                line-height: 0.6;
-            }
-            .job-header, .edu-header, .project-header {
-                margin-bottom: 4px;
+                line-height: 0.8;
             }
         }
     </style>
@@ -197,7 +201,7 @@
 
     <div class="section">
         <div class="summary">
-            Lead DevOps/SRE Engineer and Backend specialist with 5+ years of experience architecting scalable distributed systems and cloud-native infrastructure. Expert in Kubernetes orchestration, multi-cloud deployments, and observability stacks. Currently leading backend development and infrastructure at a DeFi trading platform, with proven expertise in building mission-critical systems from scratch using Terraform, Ansible, and GitOps practices.
+            Lead DevOps/SRE Engineer and Backend specialist with 5+ years of experience architecting scalable distributed systems and cloud-native infrastructure. Expert in Kubernetes orchestration, multi-cloud deployments, GPU infrastructure, and observability stacks. Currently leading infrastructure and SRE practices at FlexAI, building production-grade AI infrastructure from scratch with expertise in multi-cloud orchestration, high-performance networking, and mission-critical systems using Terraform, Kubernetes operators, and GitOps practices.
         </div>
     </div>
 
@@ -205,29 +209,28 @@
         <h3>Technical Skills</h3>
         <div class="skills-grid">
             <div class="skill-category">
-                <h4>DevOps & Infrastructure</h4>
+                <h4>AI/ML Infrastructure</h4>
                 <ul class="skill-list">
-                    <li>Kubernetes Orchestration</li>
-                    <li>Terraform IaC</li>
-                    <li>Ansible Configuration</li>
-                    <li>ArgoCD GitOps</li>
-                    <li>Docker Containerization</li>
-                    <li>Multi-Cloud Architecture</li>
-                    <li>Digital Ocean & OVHCloud</li>
-                    <li>Infrastructure Design</li>
+                    <li>GPU Infrastructure (Nvidia, AMD)</li>
+                    <li>nvidia-device-plugin</li>
+                    <li>ROCm gpu-operator</li>
+                    <li>AI Workload Orchestration</li>
+                    <li>Training & Inference Pipelines</li>
+                    <li>Multi-Cloud GPU Computing</li>
+                    <li>Bare Metal GPU Clusters</li>
                 </ul>
             </div>
             <div class="skill-category">
-                <h4>Monitoring & Observability</h4>
+                <h4>DevOps & Infrastructure</h4>
                 <ul class="skill-list">
-                    <li>Prometheus & Grafana</li>
-                    <li>OpenTelemetry</li>
-                    <li>Loki Log Aggregation</li>
-                    <li>Distributed Tracing</li>
-                    <li>Alerting & Incident Response</li>
-                    <li>Performance Monitoring</li>
-                    <li>SLI/SLO Implementation</li>
-                    <li>System Health Dashboards</li>
+                    <li>Kubernetes & Operators</li>
+                    <li>Terraform & Pulumi IaC</li>
+                    <li>ArgoCD & FluxCD GitOps</li>
+                    <li>Helm Charts</li>
+                    <li>Ansible Configuration</li>
+                    <li>Docker Containerization</li>
+                    <li>Multi-Cloud (AWS, Azure)</li>
+                    <li>Infrastructure Design</li>
                 </ul>
             </div>
             <div class="skill-category">
@@ -236,22 +239,53 @@
                     <li>Go (Golang) - Expert</li>
                     <li>Python - Production</li>
                     <li>Bash/Shell Scripting</li>
-                    <li>YAML/JSON</li>
-                    <li>Solidity - Blockchain</li>
-                    <li>TypeScript</li>
-                    <li>Scala</li>
                     <li>Rust</li>
+                    <li>Scala</li>
+                    <li>TypeScript</li>
+                    <li>Solidity - Blockchain</li>
                 </ul>
             </div>
             <div class="skill-category">
                 <h4>Backend Architecture</h4>
                 <ul class="skill-list">
-                    <li>Microservices Design</li>
+                    <li>Microservices & DDD</li>
+                    <li>gRPC Services</li>
                     <li>Event-Driven Systems</li>
-                    <li>Domain-Driven Design</li>
                     <li>API Design Patterns</li>
-                    <li>System Integration</li>
                     <li>High Availability Design</li>
+                    <li>System Integration</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Monitoring & Observability</h4>
+                <ul class="skill-list">
+                    <li>Prometheus & Grafana</li>
+                    <li>OpenTelemetry & Tracing</li>
+                    <li>Loki Log Aggregation</li>
+                    <li>Alerting & Incident Response</li>
+                    <li>Performance Monitoring</li>
+                    <li>SLI/SLO Implementation</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Networking & Service Mesh</h4>
+                <ul class="skill-list">
+                    <li>Skupper Edge Networking</li>
+                    <li>Low-Latency Networking</li>
+                    <li>Cross-Cluster Communication</li>
+                    <li>Service Discovery</li>
+                    <li>Load Balancing</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Databases & Storage</h4>
+                <ul class="skill-list">
+                    <li>PostgreSQL</li>
+                    <li>TimescaleDB</li>
+                    <li>Redis Caching</li>
+                    <li>Apache Druid</li>
+                    <li>JuiceFS Distributed Storage</li>
+                    <li>Data Modeling</li>
                 </ul>
             </div>
             <div class="skill-category">
@@ -265,27 +299,52 @@
                     <li>Configuration Management</li>
                 </ul>
             </div>
-            <div class="skill-category">
-                <h4>Databases & Storage</h4>
-                <ul class="skill-list">
-                    <li>PostgreSQL</li>
-                    <li>TimescaleDB</li>
-                    <li>Redis Caching</li>
-                    <li>Elasticsearch</li>
-                    <li>Apache Druid</li>
-                    <li>Data Modeling</li>
-                </ul>
-            </div>
         </div>
     </div>
 
     <div class="section">
         <h3>Professional Experience</h3>
-        
+
+        <div class="experience-item">
+            <div class="job-header">
+                <h4 class="job-title">Senior SRE Engineer</h4>
+                <div><span class="company">FlexAI - AI Infrastructure Platform</span> • <span class="date">September 2025 - Present</span></div>
+            </div>
+            <div class="job-details">
+                Building production-grade infrastructure for AI-as-a-Service platform, orchestrating multi-cloud GPU compute for training, inference, and AI workloads at scale.
+                <br><br>
+                • Architected and built stable, zero-maintenance Kubernetes infrastructure spanning multi-cloud and bare metal environments (AWS, Azure, Sesterce, Scaleway)
+                <br>
+                • Set up and configured FluxCD for GitOps-based continuous deployment, enabling declarative infrastructure management and automated reconciliation across clusters
+                <br>
+                • Created custom Helm charts for application deployments, standardizing packaging and configuration management across multi-cluster environments
+                <br>
+                • Designed and delivered FlexAI-managed customer-facing product enabling "Bring Your Own Compute" on AWS and Azure, defining architecture, building core services, and streamlining deployment workflows to enhance customer flexibility and cloud portability
+                <br>
+                • Brought up, configured, and performance-tuned GPU-based compute infrastructure (Nvidia A10G, H100, AMD MI300), ensuring high reliability and throughput across distributed AI workloads
+                <br>
+                • Built gRPC services for cross-cluster workload scheduling, enabling efficient orchestration and coordination of AI jobs across geographically distributed Kubernetes clusters
+                <br>
+                • Designed and implemented custom Kubernetes operators for workload management, automating complex orchestration patterns for AI training and inference jobs
+                <br>
+                • Integrated and managed GPU Kubernetes operators including nvidia-device-plugin and ROCm gpu-operator, ensuring proper resource allocation and comprehensive monitoring of GPU utilization
+                <br>
+                • Investigated and deployed low-latency networking solutions and edge cluster serving (Skupper) for distributed AI workloads
+                <br>
+                • Contributed high-scalability data layer with cross-cloud/region support using JuiceFS for distributed storage across heterogeneous infrastructure
+                <br>
+                • Established SRE best practices by building robust observability pipelines and monitoring systems, delivering actionable metrics and distributed tracing to accelerate debugging and improve service reliability
+                <br>
+                • Collaborated closely with runtime teams to ensure AI workloads run smoothly, addressing infrastructure bottlenecks and optimizing resource utilization
+                <br>
+                • Actively reviewed design documents across teams to ensure cross-functional and business alignment on architectural decisions
+            </div>
+        </div>
+
         <div class="experience-item">
             <div class="job-header">
                 <h4 class="job-title">Lead Backend/DevOps Engineer</h4>
-                <div><span class="company">Perplex - DeFi Trading Platform</span> • <span class="date">April 2025 - Present</span></div>
+                <div><span class="company">Perplex - DeFi Trading Platform</span> • <span class="date">April 2025 - September 2025</span></div>
             </div>
             <div class="job-details">
                 Leading backend architecture and infrastructure operations for an on-chain trading platform serving DeFi protocols and traders.

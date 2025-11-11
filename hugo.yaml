@@ -80,8 +80,8 @@ params:
     enable: true
     intro: "Hi, I'm"
     title: "Dhia Gharsallaoui"
-    subtitle: "Lead Backend Engineer - DeFi & Blockchain"
-    content: "A passionate backend engineer leading the development of high-performance DeFi trading systems. I specialize in Go backend architecture, blockchain integrations, and building scalable financial infrastructure."
+    subtitle: "Senior SRE Engineer - AI Infrastructure"
+    content: "A passionate SRE engineer building production-grade AI infrastructure at scale. I specialize in Kubernetes orchestration, GPU infrastructure, multi-cloud deployments, and high-performance distributed systems for AI workloads."
     image: /images/profile.jpg
     button:
       enable: true
@@ -103,69 +103,114 @@ params:
     title: "About Me"
     image: "/images/profile.jpg"
     content: |-
-      A Lead Backend Engineer with 4+ years of experience specializing in high-performance DeFi and blockchain systems. I architect and implement scalable backend infrastructure using Go, focusing on real-time trading systems and cross-chain protocols.
+      A Senior SRE Engineer with 5+ years of experience specializing in AI infrastructure and cloud-native systems. I architect and implement production-grade GPU infrastructure, Kubernetes platforms, and multi-cloud orchestration for AI workloads at scale.
 
-      I'm passionate about 🔗 blockchain technology, 🏗️ backend architecture, 💱 DeFi protocols, and 📈 high-performance trading systems. My approach combines deep technical expertise with hands-on implementation of mission-critical financial infrastructure.
+      I'm passionate about 🤖 AI infrastructure, ☸️ Kubernetes orchestration, 🎮 GPU computing, and ⚡ high-performance distributed systems. My approach combines deep technical expertise with hands-on implementation of mission-critical AI platforms.
 
-      Currently leading backend development at Perplex (DeFi trading platform), building smart contract integrations, and contributing to open-source blockchain projects.
+      Currently building infrastructure at FlexAI (AI-as-a-Service platform), architecting multi-cloud GPU compute, and contributing to cloud-native open-source projects.
     skills:
       enable: true
       title: "Technologies I work with:"
       items:
+        - "GPU Infrastructure (Nvidia H100, A10G, AMD MI300)"
+        - "Kubernetes Orchestration"
+        - "Kubernetes Operators Development"
+        - "AI Workload Orchestration"
+        - "Training & Inference Pipelines"
+        - "Multi-Cloud GPU Computing"
+        - "Bare Metal GPU Clusters"
+        - "nvidia-device-plugin"
+        - "ROCm gpu-operator"
         - "Go (Golang) - Expert"
         - "Python - Production"
-        - "Rust - Familiar"
-        - "Solidity - Smart Contracts"
-        - "TypeScript"
+        - "Rust"
         - "Scala"
-        - "REST & GraphQL APIs"
-        - "gRPC & Protocol Buffers"
+        - "TypeScript"
+        - "Bash/Shell Scripting"
+        - "Terraform IaC"
+        - "Pulumi IaC"
+        - "Ansible Configuration"
+        - "ArgoCD GitOps"
+        - "FluxCD GitOps"
+        - "Helm Charts"
+        - "Docker Containerization"
+        - "AWS"
+        - "Azure"
+        - "Scaleway"
+        - "gRPC Services"
+        - "REST APIs"
         - "Microservices Architecture"
         - "Event-Driven Systems"
+        - "Domain-Driven Design"
+        - "High Availability Design"
+        - "Skupper Edge Networking"
+        - "Low-Latency Networking"
+        - "Cross-Cluster Communication"
+        - "Service Discovery"
+        - "Load Balancing"
+        - "Prometheus & Grafana"
+        - "OpenTelemetry"
+        - "Distributed Tracing"
+        - "Loki Log Aggregation"
+        - "Alerting & Incident Response"
+        - "Performance Monitoring"
+        - "SLI/SLO Implementation"
         - "Apache Kafka"
         - "NATS"
         - "PostgreSQL"
         - "TimescaleDB"
-        - "Redis"
-        - "Kubernetes"
-        - "Docker"
-        - "Terraform"
-        - "Ansible"
-        - "Helm"
-        - "ArgoCD"
-        - "Prometheus"
-        - "Grafana"
-        - "OpenTelemetry"
-        - "Elasticsearch"
-        - "Apache Spark"
-        - "Delta Lake"
-        - "GitLab CI"
-        - "Digital Ocean"
-        - "OVH"
-        - "Ethereum Protocol"
-        - "Smart Contract Integration"
-        - "Cross-chain Bridges"
-        - "XRPL Integration"
-        - "DeFi Trading Systems"
-        - "On-chain Data Processing"
+        - "Redis Caching"
+        - "Apache Druid"
+        - "JuiceFS Distributed Storage"
+        - "Data Modeling"
+        - "GitHub Actions"
+        - "GitLab CI/CD"
+        - "Jenkins Pipelines"
 
   experience:
     enable: true
     items:
-      - job: "Lead Backend Engineer"
-        company: "Perplex"
-        companyUrl: "#"
-        date: "May 2025 - present"
+      - job: "Senior SRE Engineer"
+        company: "FlexAI"
+        companyUrl: "https://flex.ai"
+        date: "September 2025 - Present"
+        featuredLink:
+          enable: true
+          name: "Company Website"
+          url: "https://flex.ai"
         content: |
-          Leading backend architecture and development for a DeFi on-chain trading platform.
+          Building production-grade infrastructure for AI-as-a-Service platform, orchestrating multi-cloud GPU compute for training, inference, and AI workloads at scale.
 
           Key Achievements:
-          - Architecting high-performance trading systems in Go handling real-time price feeds and order execution
-          - Building scalable API infrastructure for DeFi trading operations across multiple blockchain networks
-          - Implementing robust on-chain data ingestion pipelines processing millions of transactions daily
-          - Developing smart contract interaction layers for automated trading strategies and liquidity provision
-          - Establishing system architecture patterns for high-availability financial infrastructure
-          - Collaborating with protocol teams to deliver end-to-end trading features and risk management systems
+          - Architected and built stable, zero-maintenance Kubernetes infrastructure spanning multi-cloud and bare metal environments (AWS, Azure, Sesterce, Scaleway)
+          - Set up and configured FluxCD for GitOps-based continuous deployment, enabling declarative infrastructure management and automated reconciliation across clusters
+          - Created custom Helm charts for application deployments, standardizing packaging and configuration management across multi-cluster environments
+          - Designed and delivered FlexAI-managed customer-facing product enabling "Bring Your Own Compute" on AWS and Azure, defining architecture, building core services, and streamlining deployment workflows
+          - Brought up, configured, and performance-tuned GPU-based compute infrastructure (Nvidia A10G, H100, AMD MI300), ensuring high reliability and throughput across distributed AI workloads
+          - Built gRPC services for cross-cluster workload scheduling, enabling efficient orchestration and coordination of AI jobs across geographically distributed Kubernetes clusters
+          - Designed and implemented custom Kubernetes operators for workload management, automating complex orchestration patterns for AI training and inference jobs
+          - Integrated and managed GPU Kubernetes operators including nvidia-device-plugin and ROCm gpu-operator, ensuring proper resource allocation and comprehensive monitoring of GPU utilization
+          - Investigated and deployed low-latency networking solutions and edge cluster serving (Skupper) for distributed AI workloads
+          - Contributed high-scalability data layer with cross-cloud/region support using JuiceFS for distributed storage across heterogeneous infrastructure
+          - Established SRE best practices by building robust observability pipelines and monitoring systems, delivering actionable metrics and distributed tracing to accelerate debugging and improve service reliability
+          - Collaborated closely with runtime teams to ensure AI workloads run smoothly, addressing infrastructure bottlenecks and optimizing resource utilization
+          - Actively reviewed design documents across teams to ensure cross-functional and business alignment on architectural decisions
+
+      - job: "Lead Backend/DevOps Engineer"
+        company: "Perplex"
+        companyUrl: "#"
+        date: "April 2025 - September 2025"
+        content: |
+          Led backend architecture and infrastructure operations for an on-chain trading platform serving DeFi protocols and traders.
+
+          Key Achievements:
+          - Designed and implemented complete infrastructure architecture from scratch, including network topology, security policies, and scalability frameworks
+          - Provisioned multi-cloud infrastructure using Terraform across Digital Ocean and OVHCloud platforms, ensuring cost optimization and geographic redundancy
+          - Integrated Ansible for automated configuration management and deployed Kubernetes clusters with ArgoCD for GitOps-based continuous deployment
+          - Architected and implemented high-performance trading backend systems in Golang, handling real-time price feeds and order execution
+          - Built robust on-chain data ingestion pipelines processing millions of transactions daily with sub-second latency requirements
+          - Established system architecture patterns for high-availability trading infrastructure with zero-downtime deployments
+          - Implemented comprehensive monitoring and alerting systems for trading operations and infrastructure health
 
       - job: "Solution Architect"
         company: "Skilld"
