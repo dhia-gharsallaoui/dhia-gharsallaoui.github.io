@@ -347,6 +347,37 @@ params:
           - icon: fab fa-github
             url: https://github.com/dhia-gharsallaoui/gorte
 
+      - title: "AuthGuard"
+        content: "Lightweight, high-performance authentication service designed for nginx's auth_request module. Provides composable authentication with pluggable providers, built-in caching, and comprehensive monitoring."
+        image: /images/projects/authguard.png
+        featured:
+          name: "View Project"
+          link: "https://github.com/dhia-gharsallaoui/authguard"
+        badges:
+          - "Go"
+          - "Nginx"
+          - "Authentication"
+          - "Caching"
+          - "Monitoring"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/dhia-gharsallaoui/authguard
+
+      - title: "Go ElevenLabs"
+        content: "Production-grade Go client library for the ElevenLabs Text-to-Speech API. Built with idiomatic Go practices, comprehensive error handling, and full support for streaming audio generation."
+        image: /images/projects/go-elevenlabs.png
+        featured:
+          name: "View Project"
+          link: "https://github.com/dhia-gharsallaoui/go-elevenlabs"
+        badges:
+          - "Go"
+          - "Text-to-Speech"
+          - "API Client"
+          - "Streaming"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/dhia-gharsallaoui/go-elevenlabs
+
       - title: "Kratos Admin UI"
         content: "A modern, responsive admin interface for Ory Kratos identity management system. Features identity management, session monitoring, analytics dashboard, and schema inspection."
         image: /images/projects/kratos-admin-ui.png
