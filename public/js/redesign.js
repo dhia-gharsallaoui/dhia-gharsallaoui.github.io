@@ -48,21 +48,35 @@
     });
   });
 
-  /* ---------- Contact: compose a mailto ---------- */
+  /* ---------- Contact: submit via Web3Forms (no email exposed) ---------- */
   var form = document.getElementById('contact-form');
   if (form) {
     form.addEventListener('submit', function (ev) {
       ev.preventDefault();
-      var to = form.getAttribute('data-mailto') || '';
-      var name = (document.getElementById('f-name') || {}).value || '';
-      var mail = (document.getElementById('f-mail') || {}).value || '';
-      var subj = (document.getElementById('f-subj') || {}).value || ('Portfolio enquiry from ' + name);
-      var msg = (document.getElementById('f-msg') || {}).value || '';
-      var body = msg + '\n\n— ' + name + (mail ? ' (' + mail + ')' : '');
-      var href = 'mailto:' + to + '?subject=' + encodeURIComponent(subj) + '&body=' + encodeURIComponent(body);
       var status = document.getElementById('form-status');
-      if (status) status.textContent = 'Opening your email client…';
-      window.location.href = href;
+      var btn = form.querySelector('button[type="submit"]');
+      var payload = {};
+      new FormData(form).forEach(function (v, k) { payload[k] = v; });
+      if (status) { status.style.color = ''; status.textContent = 'Sending…'; }
+      if (btn) btn.disabled = true;
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (j.success) {
+            if (status) status.textContent = "Thanks — your message is on its way. I'll get back to you soon.";
+            form.reset();
+          } else {
+            if (status) { status.style.color = '#ff6b6b'; status.textContent = j.message || 'Something went wrong. Please try again.'; }
+          }
+        })
+        .catch(function () {
+          if (status) { status.style.color = '#ff6b6b'; status.textContent = 'Network error — please try again, or reach me on LinkedIn.'; }
+        })
+        .then(function () { if (btn) btn.disabled = false; });
     });
   }
 

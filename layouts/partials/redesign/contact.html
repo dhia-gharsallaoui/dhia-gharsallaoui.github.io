@@ -1,6 +1,9 @@
 {{- $c := .Site.Params.contact -}}
 {{- if $c.enable | default true -}}
-{{- $email := replace ($c.btnLink | default "mailto:gharsallaoui.dhia@gmail.com") "mailto:" "" -}}
+{{- $linkedin := "" -}}
+{{- with .Site.Params.hero.socialLinks.fontAwesomeIcons -}}
+  {{- range . -}}{{- if in .icon "linkedin" -}}{{- $linkedin = .url -}}{{- end -}}{{- end -}}
+{{- end -}}
 <section class="section" id="contact">
   <div class="wrap">
     <div class="contact-card reveal">
@@ -9,11 +12,16 @@
         <div class="eyebrow">Contact</div>
         <h2 class="section-title">Let's build something <span class="grad-text">solid</span>.</h2>
         <p class="section-lead">{{ $c.content | default "Have a cloud, GPU or AI-infrastructure challenge? Let's talk." }}</p>
-        <a class="contact-email" href="mailto:{{ $email }}">{{ $email }}</a>
+        {{ with $linkedin }}<a class="contact-email" href="{{ . }}" target="_blank" rel="noopener">Prefer LinkedIn? Reach me there →</a>{{ end }}
         <div class="hero-socials" style="margin-top:1.75rem">{{ partial "redesign/socials.html" . }}</div>
       </div>
 
-      <form class="contact-form" id="contact-form" data-mailto="{{ $email }}">
+      {{ if $c.web3formsKey }}
+      <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="{{ $c.web3formsKey }}">
+        <input type="hidden" name="from_name" value="{{ .Site.Params.hero.title }} portfolio">
+        {{/* Honeypot: hidden from humans, catches bots. */}}
+        <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none">
         <div class="field">
           <label for="f-name">Name</label>
           <input type="text" id="f-name" name="name" autocomplete="name" required>
@@ -24,7 +32,7 @@
         </div>
         <div class="field">
           <label for="f-subj">Subject</label>
-          <input type="text" id="f-subj" name="subject">
+          <input type="text" id="f-subj" name="subject" placeholder="What's this about?">
         </div>
         <div class="field">
           <label for="f-msg">Your message</label>
@@ -33,8 +41,9 @@
         <div class="contact-actions">
           <button type="submit" class="btn btn-grad">{{ $c.btnName | default "Send message" }} {{ partial "redesign/icon.html" "arrow" }}</button>
         </div>
-        <p class="form-status" id="form-status" role="status"></p>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
       </form>
+      {{ end }}
     </div>
   </div>
 </section>

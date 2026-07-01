@@ -4,10 +4,10 @@
   {{- range . -}}
     {{- $key := "" -}}
     {{- if in .icon "github" }}{{ $key = "github" }}
-    {{- else if in .icon "linkedin" }}{{ $key = "linkedin" }}
-    {{- else if or (in .icon "envelope") (in .icon "mail") }}{{ $key = "mail" }}{{ end -}}
-    {{- if $key -}}
-    <a href="{{ .url }}" aria-label="{{ $key }}"{{ if not (hasPrefix .url "mailto:") }} target="_blank" rel="noopener"{{ end }}>{{ partial "redesign/icon.html" $key }}</a>
+    {{- else if in .icon "linkedin" }}{{ $key = "linkedin" }}{{ end -}}
+    {{- /* Never render mailto: links — the email must not appear in the page. */ -}}
+    {{- if and $key (not (hasPrefix .url "mailto:")) -}}
+    <a href="{{ .url }}" aria-label="{{ $key }}" target="_blank" rel="noopener">{{ partial "redesign/icon.html" $key }}</a>
     {{- end -}}
   {{- end -}}
 {{- end -}}

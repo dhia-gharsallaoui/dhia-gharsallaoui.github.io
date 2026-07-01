@@ -106,8 +106,6 @@ params:
           url: https://github.com/dhia-gharsallaoui
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/gharsallaoui-dhia-eddine/
-        - icon: fas fa-envelope
-          url: mailto:gharsallaoui.dhia@gmail.com
 
   about:
     enable: true
@@ -446,9 +444,11 @@ params:
 
   contact:
     enable: true
-    content: "Interested in collaboration or have a project in mind? Feel free to reach out!"
-    btnName: "Email Me"
-    btnLink: "mailto:gharsallaoui.dhia@gmail.com"
+    content: "Have a cloud, GPU or AI-infrastructure challenge? Send a note and I'll get back to you."
+    btnName: "Send message"
+    # Web3Forms public access key — safe to expose (client-side only; routes
+    # submissions to my inbox without revealing the address). Get one at web3forms.com.
+    web3formsKey: "7dac2d7b-35a6-488b-b7c2-250ca7880713"
 
   footer:
     recentPosts:
