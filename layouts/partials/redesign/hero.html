@@ -1,0 +1,41 @@
+{{- $h := .Site.Params.hero -}}
+{{- $title := $h.title | default .Site.Title -}}
+{{- $accent := $h.headlineAccent -}}
+{{- $headline := $title -}}
+{{- if $accent -}}
+  {{- $headline = replace $title $accent (printf `<span class="grad-text">%s</span>` $accent) -}}
+{{- end -}}
+<header class="hero" id="hero">
+  <canvas class="hero-canvas" id="synapse-net" aria-hidden="true"></canvas>
+  <div class="wrap hero-inner">
+    {{ with $h.eyebrow }}<div class="eyebrow hero-tags">{{ . }}</div>{{ end }}
+    <h1>
+      {{ with $h.intro }}<span class="lead">{{ . }}</span>{{ end }}
+      {{ $headline | safeHTML }}
+    </h1>
+    {{ with $h.subtitle }}<p class="role">{{ . }}</p>{{ end }}
+    {{ with $h.content }}<p class="subcopy">{{ . }}</p>{{ end }}
+
+    <div class="hero-cta">
+      {{ with $h.button }}{{ if .enable }}
+      <a class="btn btn-grad" href="{{ .url }}"{{ if .download }} download{{ end }}{{ if .newPage }} target="_blank" rel="noopener"{{ end }}>
+        {{ .name }} {{ partial "redesign/icon.html" "arrow" }}
+      </a>
+      {{ end }}{{ end }}
+      <a class="btn btn-ghost" href="#projects">Explore work</a>
+    </div>
+
+    <div class="hero-socials">{{ partial "redesign/socials.html" . }}</div>
+  </div>
+
+  {{ with $h.stats }}
+  <div class="wrap hero-stats reveal">
+    {{ range . }}
+    <div class="stat">
+      <div class="value">{{ .value }}</div>
+      <div class="label">{{ .label }}</div>
+    </div>
+    {{ end }}
+  </div>
+  {{ end }}
+</header>

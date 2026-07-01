@@ -1,0 +1,27 @@
+{{- $title := .Site.Params.hero.title | default .Site.Title -}}
+<nav class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">
+      <span class="glyph">{{ partial "redesign/icon.html" "synapse" }}</span>
+      <span>{{ $title }}</span>
+    </a>
+
+    <div class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-grad">Contact</a>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" type="button">
+        <span class="moon">{{ partial "redesign/icon.html" "moon" }}</span>
+        <span class="sun">{{ partial "redesign/icon.html" "sun" }}</span>
+      </button>
+      <button class="nav-burger" id="nav-burger" aria-label="Menu" type="button">{{ partial "redesign/icon.html" "menu" }}</button>
+    </div>
+  </div>
+</nav>

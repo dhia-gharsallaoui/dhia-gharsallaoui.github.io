@@ -1,0 +1,13 @@
+{{- /* Renders social links from hero.socialLinks.fontAwesomeIcons, mapping
+       FontAwesome classes to inline SVG icon keys. */ -}}
+{{- with .Site.Params.hero.socialLinks.fontAwesomeIcons -}}
+  {{- range . -}}
+    {{- $key := "" -}}
+    {{- if in .icon "github" }}{{ $key = "github" }}
+    {{- else if in .icon "linkedin" }}{{ $key = "linkedin" }}{{ end -}}
+    {{- /* Never render mailto: links — the email must not appear in the page. */ -}}
+    {{- if and $key (not (hasPrefix .url "mailto:")) -}}
+    <a href="{{ .url }}" aria-label="{{ $key }}" target="_blank" rel="noopener">{{ partial "redesign/icon.html" $key }}</a>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

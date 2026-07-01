@@ -1,0 +1,19 @@
+/*
+ * Project custom styles.
+ * Loaded after the hugo-profile theme's CSS via `params.customCSS: true`
+ * (see themes/hugo-profile/layouts/_default/baseof.html), so rules here
+ * override the theme without editing the pinned submodule.
+ */
+
+/* About > "Technologies I work with": pack 3–4 skills per row instead of the
+   theme default of 2, and let the grid fill the content width. */
+#about ul {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+/* Keep two columns on small phones so labels stay readable. */
+@media (max-width: 575.98px) {
+  #about ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

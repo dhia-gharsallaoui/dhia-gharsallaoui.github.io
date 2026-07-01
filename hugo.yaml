@@ -42,6 +42,7 @@ params:
   useBootstrapCDN: false
   animate: true
   mathjax: true
+  customCSS: true
 
   theme:
     defaultTheme: "light"
@@ -81,8 +82,18 @@ params:
     intro: "Hi, I'm"
     title: "Dhia Gharsallaoui"
     subtitle: "AI Infrastructure Architect & Senior SRE"
+    eyebrow: "CLOUD · GPU · AI · AGENTIC INFRASTRUCTURE"
     content: "Building production-grade AI infrastructure at scale. I architect Kubernetes and GPU platforms, multi-cloud and edge deployments, and the agentic-AI layer on top — from LLM gateways to AI-driven operations and infrastructure automation."
     image: /images/profile.jpg
+    # Redesign hero: accent phrase highlighted in the headline (must appear in title)
+    headlineAccent: "Gharsallaoui"
+    stats:
+      - value: "5+ yrs"
+        label: "AI infra & cloud-native"
+      - value: "1000s"
+        label: "GPUs orchestrated"
+      - value: "Multi-cloud"
+        label: "sovereign & edge"
     button:
       enable: true
       name: "View Resume"
@@ -95,8 +106,6 @@ params:
           url: https://github.com/dhia-gharsallaoui
         - icon: fab fa-linkedin
           url: https://www.linkedin.com/in/gharsallaoui-dhia-eddine/
-        - icon: fas fa-envelope
-          url: mailto:gharsallaoui.dhia@gmail.com
 
   about:
     enable: true
@@ -428,16 +437,18 @@ params:
   #       content: "Professional certification in Scrum methodology and agile practices"
   #       url: "https://www.scrumstudy.com/certification/verify?type=SFC&number=838205"
   #       image: /images/scrum.jpg
-  # 
+  #
   #     - title: "Supervised Machine Learning: Regression"
   #       content: "IBM certification in advanced machine learning techniques"
   #       image: "/images/Supervised Machine Learning: Regression.jpg"
 
   contact:
     enable: true
-    content: "Interested in collaboration or have a project in mind? Feel free to reach out!"
-    btnName: "Email Me"
-    btnLink: "mailto:gharsallaoui.dhia@gmail.com"
+    content: "Have a cloud, GPU or AI-infrastructure challenge? Send a note and I'll get back to you."
+    btnName: "Send message"
+    # Web3Forms public access key — safe to expose (client-side only; routes
+    # submissions to my inbox without revealing the address). Get one at web3forms.com.
+    web3formsKey: "7dac2d7b-35a6-488b-b7c2-250ca7880713"
 
   footer:
     recentPosts:
