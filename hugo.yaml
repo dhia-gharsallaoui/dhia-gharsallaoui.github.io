@@ -37,7 +37,7 @@ markup:
     #
 params:
   title: "Dhia Gharsallaoui"
-  description: "Distributed Platform Architect passionate about building scalable cloud-native systems and blockchain solutions"
+  description: "AI Infrastructure Architect building multi-tenant GPU platforms, cloud-native systems, and agentic AI infrastructure"
   favicon: "/fav.png"
   useBootstrapCDN: false
   animate: true
@@ -80,8 +80,8 @@ params:
     enable: true
     intro: "Hi, I'm"
     title: "Dhia Gharsallaoui"
-    subtitle: "Senior SRE Engineer - AI Infrastructure"
-    content: "A passionate SRE engineer building production-grade AI infrastructure at scale. I specialize in Kubernetes orchestration, GPU infrastructure, multi-cloud deployments, and high-performance distributed systems for AI workloads."
+    subtitle: "AI Infrastructure Architect & Senior SRE"
+    content: "Building production-grade AI infrastructure at scale. I architect Kubernetes and GPU platforms, multi-cloud and edge deployments, and the agentic-AI layer on top — from LLM gateways to AI-driven operations and infrastructure automation."
     image: /images/profile.jpg
     button:
       enable: true
@@ -103,11 +103,11 @@ params:
     title: "About Me"
     image: "/images/profile.jpg"
     content: |-
-      A Senior SRE Engineer with 5+ years of experience specializing in AI infrastructure and cloud-native systems. I architect and implement production-grade GPU infrastructure, Kubernetes platforms, and multi-cloud orchestration for AI workloads at scale.
+      A Senior SRE and AI Infrastructure Architect with 5+ years of experience across cloud-native systems and GPU platforms. I architect and operate production-grade GPU infrastructure, Kubernetes platforms, and multi-cloud/edge orchestration for AI workloads at scale — and increasingly, the agentic-AI layer that runs and automates them.
 
-      I'm passionate about 🤖 AI infrastructure, ☸️ Kubernetes orchestration, 🎮 GPU computing, and ⚡ high-performance distributed systems. My approach combines deep technical expertise with hands-on implementation of mission-critical AI platforms.
+      I'm passionate about 🤖 AI infrastructure, ☸️ Kubernetes orchestration, 🎮 GPU computing, 🧠 agentic systems, and ⚡ high-performance distributed systems. My approach pairs deep technical expertise with architecture leadership on mission-critical AI platforms.
 
-      Currently building infrastructure at FlexAI (AI-as-a-Service platform), architecting multi-cloud GPU compute, and contributing to cloud-native open-source projects.
+      Currently architecting a multi-tenant sovereign GPU cloud platform at Dapple — extending managed Kubernetes into sovereign and edge datacenters at a scale of thousands of GPUs — and contributing to cloud-native open-source projects.
     skills:
       enable: true
       title: "Technologies I work with:"
@@ -121,6 +121,19 @@ params:
         - "Bare Metal GPU Clusters"
         - "nvidia-device-plugin"
         - "ROCm gpu-operator"
+        - "Agentic AI Infrastructure"
+        - "AI Agents (LangGraph)"
+        - "Model Context Protocol (MCP)"
+        - "LLM / AI Gateways"
+        - "Agentic Infrastructure-as-Code"
+        - "Multi-Tenant Platform Architecture"
+        - "Azure Kubernetes Service (AKS)"
+        - "Entra ID / Workload Identity"
+        - "Cilium / eBPF Networking"
+        - "Temporal Workflows"
+        - "WireGuard Cross-Site Networking"
+        - "Bare-Metal Provisioning (PXE / Redfish)"
+        - "Sovereign & Edge Kubernetes"
         - "Go (Golang) - Expert"
         - "Python - Production"
         - "Rust"
@@ -170,10 +183,25 @@ params:
   experience:
     enable: true
     items:
-      - job: "Senior SRE Engineer"
+      - job: "AI Infrastructure Architect"
+        company: "Dapple"
+        date: "April 2026 - Present"
+        content: |
+          Technical lead and architect for a multi-tenant GPU cloud platform that extends managed Kubernetes into sovereign and edge datacenters at a scale of thousands of GPUs — owning the stack end-to-end, from cross-site GPU networking and node provisioning to the agentic infrastructure and AI-driven operations layers on top.
+
+          Key Achievements:
+          - Architected an end-to-end multi-tenant platform running customer AI and GPU workloads on Kubernetes worker nodes hosted in sovereign and edge datacenters, joined to a centrally managed control plane over private connectivity at a scale of thousands of GPUs
+          - Led the adoption and integration of upstream open-source Kubernetes projects (Unbounded, AKS Flex Node) as the platform's node-layer foundation, letting customer bare-metal and virtual machines join as fully managed worker nodes with automatic GPU enablement and zero-downtime upgrades; built the validation environment that proved cross-site node join and GPU workload scheduling ahead of rollout
+          - Designed the private connectivity and network architecture linking the control plane and customer environments to sovereign and on-premises datacenters, with strict per-tenant isolation and private-only access to managed services, delivered as modular, staged infrastructure-as-code
+          - Built the cloud control-plane landing zone on a multi-subscription, GitOps-driven architecture with workload identity and least-privilege, just-in-time access; stood up an AI gateway providing governed, cost-controlled, and safety-filtered access to large language models as a shared platform capability
+          - Pioneered an agentic Infrastructure-as-Code model in which AI coding agents generate, validate, and evolve cloud infrastructure from natural-language intent with no hand-written infrastructure code — inverting the traditional IaC expertise bottleneck and accelerating safe infrastructure change
+          - Created an agentic operations (NOC) assistant for AI-assisted detection and triage, exposing curated, read-only, fully audited telemetry tools to a per-customer AI agent runtime built on Model Context Protocol (MCP) servers, pairing agent autonomy with strict security and access controls
+          - Set technical direction and engineering standards across the platform portfolio — GitOps, test-driven development, security-by-default, and an AI-agent-native development workflow — driving architecture reviews and mentoring engineers across interdependent initiatives
+
+      - job: "Infrastructure Team Lead"
         company: "FlexAI"
         companyUrl: "https://flex.ai"
-        date: "September 2025 - Present"
+        date: "September 2025 - June 2026"
         featuredLink:
           enable: true
           name: "Company Website"
