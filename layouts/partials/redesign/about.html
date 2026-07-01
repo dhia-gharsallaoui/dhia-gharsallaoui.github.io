@@ -1,0 +1,19 @@
+{{- $a := .Site.Params.about -}}
+{{- if $a.enable | default true -}}
+<section class="section" id="about">
+  <div class="wrap about-grid">
+    {{ with $a.image }}
+    <div class="about-portrait reveal">
+      <img src="{{ . }}" alt="{{ $.Site.Params.hero.title }}" loading="lazy">
+    </div>
+    {{ end }}
+    <div class="about-copy reveal">
+      <div class="eyebrow">About</div>
+      <h2 class="section-title">Deep systems engineering, at <span class="grad-text">platform scale</span>.</h2>
+      <div style="margin-top:1.5rem">
+        {{ $a.content | markdownify }}
+      </div>
+    </div>
+  </div>
+</section>
+{{- end -}}

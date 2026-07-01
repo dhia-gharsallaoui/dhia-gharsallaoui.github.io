@@ -1,0 +1,23 @@
+{{- $ed := .Site.Params.education -}}
+{{- if $ed.enable | default true -}}
+<section class="section" id="education">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Education</div>
+      <h2 class="section-title">Foundations.</h2>
+    </div>
+    <div class="edu-grid">
+      {{ range $ed.items }}
+      <div class="edu-card reveal">
+        <div class="edu-date">{{ .date }}</div>
+        <h3 class="edu-title">{{ .title }}</h3>
+        <div class="edu-school">
+          {{ if .school.url }}<a href="{{ .school.url }}" target="_blank" rel="noopener">{{ .school.name }}</a>{{ else }}{{ .school.name }}{{ end }}
+        </div>
+        {{ with .content }}<p class="edu-note">{{ . }}</p>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{- end -}}

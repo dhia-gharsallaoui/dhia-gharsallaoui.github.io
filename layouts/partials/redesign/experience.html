@@ -1,0 +1,46 @@
+{{- $e := .Site.Params.experience -}}
+{{- if $e.enable | default true -}}
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Experience</div>
+      <h2 class="section-title">Where I've <span class="grad-text">built</span>.</h2>
+      <p class="section-lead">From blockchain backends to sovereign GPU clouds — a decade of shipping production infrastructure.</p>
+    </div>
+
+    <div class="timeline">
+      {{ range $e.items }}
+        {{- /* Parse the multiline content into a summary line + bullet list. */ -}}
+        {{- $summary := "" -}}
+        {{- $bullets := slice -}}
+        {{- range (split .content "\n") -}}
+          {{- $t := trim . " \t" -}}
+          {{- if hasPrefix $t "- " -}}
+            {{- $bullets = $bullets | append (strings.TrimPrefix "- " $t) -}}
+          {{- else if and (ne $t "") (not (hasSuffix $t ":")) (eq $summary "") -}}
+            {{- $summary = $t -}}
+          {{- end -}}
+        {{- end -}}
+        <div class="tl-item reveal">
+          <div class="tl-card">
+            <div class="tl-head">
+              <div>
+                <span class="tl-role">{{ .job }}</span>
+                <span class="tl-co">· {{ if and .companyUrl (ne .companyUrl "#") }}<a href="{{ .companyUrl }}" target="_blank" rel="noopener">{{ .company }}</a>{{ else }}{{ .company }}{{ end }}</span>
+              </div>
+              <span class="tl-date">{{ .date }}</span>
+            </div>
+            {{ with $summary }}<p class="tl-summary">{{ . }}</p>{{ end }}
+            {{ if $bullets }}
+            <ul class="tl-list{{ if gt (len $bullets) 4 }} collapsed{{ end }}">
+              {{ range $bullets }}<li>{{ . }}</li>{{ end }}
+            </ul>
+            {{ if gt (len $bullets) 4 }}<button class="tl-more" type="button">Show all {{ len $bullets }} →</button>{{ end }}
+            {{ end }}
+          </div>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{- end -}}

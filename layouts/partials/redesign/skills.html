@@ -1,0 +1,56 @@
+{{- $s := .Site.Params.about.skills -}}
+{{- if $s.enable | default true -}}
+{{- $row1 := slice
+    (dict "n" "Kubernetes" "s" "kubernetes")
+    (dict "n" "Go" "s" "go")
+    (dict "n" "Python" "s" "python")
+    (dict "n" "Rust" "s" "rust")
+    (dict "n" "TypeScript" "s" "typescript")
+    (dict "n" "Scala" "s" "scala")
+    (dict "n" "Terraform" "s" "terraform")
+    (dict "n" "Ansible" "s" "ansible")
+    (dict "n" "Docker" "s" "docker")
+    (dict "n" "Helm" "s" "helm")
+    (dict "n" "Argo CD" "s" "argo")
+    (dict "n" "Prometheus" "s" "prometheus") -}}
+{{- $row2 := slice
+    (dict "n" "Grafana" "s" "grafana")
+    (dict "n" "PyTorch" "s" "pytorch")
+    (dict "n" "NVIDIA" "s" "nvidia")
+    (dict "n" "Pulumi" "s" "pulumi")
+    (dict "n" "Kafka" "s" "apachekafka")
+    (dict "n" "PostgreSQL" "s" "postgresql")
+    (dict "n" "Redis" "s" "redis")
+    (dict "n" "Cilium" "s" "cilium")
+    (dict "n" "OpenTelemetry" "s" "opentelemetry")
+    (dict "n" "n8n" "s" "n8n")
+    (dict "n" "Linux" "s" "linux")
+    (dict "n" "Bash" "s" "gnubash") -}}
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Stack</div>
+      <h2 class="section-title">Tools I run in <span class="grad-text">production</span>.</h2>
+    </div>
+  </div>
+
+  <div class="marquee reveal" aria-hidden="true">
+    <div class="marquee-track">
+      {{ range seq 2 }}{{ range $row1 }}<span class="m-item">{{ readFile (printf "static/icons/brands/%s.svg" .s) | safeHTML }}<span>{{ .n }}</span></span>{{ end }}{{ end }}
+    </div>
+  </div>
+  <div class="marquee reveal" aria-hidden="true" style="margin-top:1.75rem">
+    <div class="marquee-track">
+      {{ range seq 2 }}{{ range $row2 }}<span class="m-item">{{ readFile (printf "static/icons/brands/%s.svg" .s) | safeHTML }}<span>{{ .n }}</span></span>{{ end }}{{ end }}
+    </div>
+  </div>
+
+  {{ with $s.items }}
+  <div class="wrap">
+    <div class="chips reveal">
+      {{ range . }}<span class="chip-mono">{{ . }}</span>{{ end }}
+    </div>
+  </div>
+  {{ end }}
+</section>
+{{- end -}}

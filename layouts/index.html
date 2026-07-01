@@ -1,0 +1,15 @@
+{{ define "title" }}{{ .Site.Title }} | {{ .Site.Params.hero.subtitle | default "AI Infrastructure Architect" }}{{ end }}
+
+{{ define "main" }}
+  {{ partial "redesign/nav.html" . }}
+  <main id="top">
+    {{ partial "redesign/hero.html" . }}
+    {{ partial "redesign/about.html" . }}
+    {{ partial "redesign/experience.html" . }}
+    {{ partial "redesign/projects.html" . }}
+    {{ partial "redesign/skills.html" . }}
+    {{ partial "redesign/education.html" . }}
+    {{ partial "redesign/contact.html" . }}
+  </main>
+  {{ partial "redesign/footer.html" . }}
+{{ end }}

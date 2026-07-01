@@ -1,0 +1,11 @@
+{{- $title := .Site.Params.hero.title | default .Site.Title -}}
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <a href="#top" class="brand">
+      <span class="glyph" style="color:var(--purple-bright)">{{ partial "redesign/icon.html" "synapse" }}</span>
+      <span>{{ $title }}</span>
+    </a>
+    <div class="foot-meta">© {{ now.Year }} {{ $title }} · AI Infrastructure Architect</div>
+    <div class="foot-links">{{ partial "redesign/socials.html" . }}</div>
+  </div>
+</footer>

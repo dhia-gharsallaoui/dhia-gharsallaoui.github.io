@@ -1,0 +1,37 @@
+{{- $p := .Site.Params.projects -}}
+{{- if $p.enable | default true -}}
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Projects</div>
+      <h2 class="section-title">Open source &amp; <span class="grad-text">production</span> work.</h2>
+      <p class="section-lead">Libraries, tools and platforms I've built or contributed to across cloud, GPU and developer infrastructure.</p>
+    </div>
+
+    <div class="cards">
+      {{ range $p.items }}
+      {{ $item := . }}
+      {{ $url := .featured.link | default (index .links 0).url }}
+      {{ $label := .featured.name | default "View project" }}
+      <article class="card reveal">
+        {{ with $item.image }}
+        <a class="card-media" href="{{ $url }}" target="_blank" rel="noopener" aria-label="{{ $item.title }} preview">
+          <img src="{{ . }}" alt="{{ $item.title }} preview" loading="lazy">
+        </a>
+        {{ end }}
+        <div class="card-body">
+          {{ with $item.badges }}
+          <div class="card-badges">{{ range . }}<span class="badge">{{ . }}</span>{{ end }}</div>
+          {{ end }}
+          <h3 class="card-title">{{ $item.title }}</h3>
+          <p class="card-text">{{ $item.content }}</p>
+          <a class="card-link" href="{{ $url }}" target="_blank" rel="noopener">
+            {{ $label }} <span>{{ partial "redesign/icon.html" "arrow" }}</span>
+          </a>
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{- end -}}

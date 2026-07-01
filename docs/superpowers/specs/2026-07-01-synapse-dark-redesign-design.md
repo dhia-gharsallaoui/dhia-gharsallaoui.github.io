@@ -17,8 +17,8 @@ editorial tech look, while keeping it a personal portfolio driven by `hugo.yaml`
 2. **Theme mode:** Keep the **light + dark toggle**. Dark is primary; light is a
    coherent derived variant (not an inversion). Reuse `hugo-profile`'s existing toggle
    (`body.classList` `dark`, `localStorage["pref-theme"]`, `prefers-color-scheme`).
-3. **Sections:** hero, about, experience, projects, skills, education, achievements,
-   contact, footer. **No** FAQ, **no** mission band.
+3. **Sections:** hero, about, experience, projects, skills, education, contact, footer.
+   **No** FAQ, **no** mission band, **no** achievements (dropped mid-build per request).
 4. **Hero motion:** Keep the animated synapse-network **canvas**, gated on
    `prefers-reduced-motion` (static fallback) and paused when off-screen.
 5. **Contact form:** **mailto-compose** — fields build a pre-filled
